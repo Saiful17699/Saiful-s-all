@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>PBCCHS</title>
+  <style>
+ 
+   body {
+      width: 765px;
+      background: black;
+    }
+    .container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .bubbles {
+      position: relative;
+      display: flex;
+    }
+    .span {
+      position: relative;
+      width: 30px;
+      height: 30px;
+      background: rgb(0,255,255);
+      margin: 0 4px;
+      border-radius: 50%;
+      box-shadow: 0 0 0 10px #4fc3dc44,
+      0 0 50px #4fc3dc,
+      0 0 100px #4fc3dc;
+      animation: animate 10s linear infinite;
+      animation-duration: calc(120s / var(--i));
+    }
+
+    .span:nth-child(even) {
+      background: rgb(0,255,0);
+      box-shadow: 0 0 0 10px rgba(0,255,0,0.3),
+      0 0 50px rgba(0,255,0,0.3),
+      0 0 100px rgba(0,255,0,0.3);
+    }
+    @keyframes animate {
+      0% {
+        transform: translateY(100vh) scale(0);
+      }
+      100% {
+        transform: translateY(-10vh) scale(1);
+      }
+    }
+    .div1 {
+      width: 730px;
+      height: 155px;
+      margin-right: 10px;
+      margin-left: 10px;
+      margin-top: 20px;
+      align-items: center;
+      justify-content: center;
+    }
+    .fi2 {
+      width: 700px;
+      margin: 15px;
+      margin-top: 15px;
+      border-radius:5px;}
+    .linkglowbutton {
+      position: relative;
+      background: white;
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 0.5cm;
+      letter-spacing: 0.01cm;
+      font-weight: 400;
+      padding: 8px 20px;
+      transition: 0.5s;
+      border: none;
+      font-family: serif;
+      margin-right: 17px;
+      height: 20vh;
+    }
+    .linkglowbutton:hover {
+      box-shadow: 0 0 35px var(--clr);
+      letter-spacing: 0.05cm;
+      color: var(--clr);
+      background: var(--clr);
+      border: none;
+    }
+    .linkglowbutton:before {
+      content: '';
+      position: absolute;
+      inset: 2px;
+      background: black;
+      border: none;
+    }
+    .spanglowbutton {
+      position: relative;
+      z-index: 1 }
+    .iglowbutton{
+      position: absolute;
+      inset: 0;
+      display: block;
+    }
+   .iglowbutton::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 80%;
+      width: 10px;
+      height: 4px;
+      background: black;
+      transition: 0.5s;
+      transform: translateX(-50%) skewX(325deg);
+    }
+    .linkglowbutton:hover .iglowbutton::before {
+      width: 20px;
+      left: 20%;
+    }
+    .iglowbutton::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 20%;
+      width: 10px;
+      height: 4px;
+      background: black;
+      transition: 0.5s;
+      transform: translateX(-50%) skewX(325deg);
+    }
+    .linkglowbutton:hover .iglowbutton::after {
+      width: 20px;
+      left: 80%;
+    }
+.glowbuttondiv{
+      margin-top: 20px;
+      width: 730px;
+      box-sizing: border-box;
+      font-family: Times New Roman;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      min-height:1px;
+      background: black;
+      flex-direction: row;
+      display:inline-block;
+     margin-bottom: 0;
+     margin-left: 50px;
+     
+}
+       
+  </style>
+</head>
+<body>
+  <div class="div1">
+    <img class="fi2" src="firstlogo.png.png" alt=""></div>
+    <div class="glowbuttondiv">
+      <a class="linkglowbutton" href="http://www.youtube.com" style="--clr:rgb(255,255,0)"><span class="spanglowbutton">প্রচ্ছদ</span><i class="iglowbutton"></i></a>
+    <a class="linkglowbutton" style="--clr:rgb(0,255,255)"><span class="spanglowbutton">যোগাযোগ</span><i class="iglowbutton"></i></a>
+    <a class="linkglowbutton" href="#" style="--clr:rgb(0,205,0)"><span class="spanglowbutton">button</span><i class="iglowbutton"></i></a>
+    <a class="linkglowbutton" style="--clr:rgb(250,100,2)"><span class="spanglowbutton">Button</span><i class="iglowbutton"></i></a>
+    <a class="linkglowbutton" style="--clr:rgb(120,205,255)"><span class="spanglowbutton">Button</span><i class="iglowbutton"></i></a></div>
+
+  
+  <div class="container">
+    <div class="bubbles">
+      <span class="span" style="--i:11;"></span>
+      <span class="span" style="--i:12;"></span>
+      <span class="span" style="--i:24;"></span>
+      <span class="span" style="--i:10;"></span>
+      <span class="span" style="--i:14;"></span>
+      <span class="span" style="--i:23;"></span>
+      <span class="span" style="--i:18;"></span>
+      <span class="span" style="--i:16;"></span>
+      <span class="span" style="--i:19;"></span>
+      <span class="span" style="--i:20;"></span>
+      <span class="span" style="--i:22;"></span>
+      <span class="span" style="--i:25;"></span>
+      <span class="span" style="--i:14;"></span>
+      <span class="span" style="--i:23;"></span>
+      <span class="span" style="--i:18;"></span>
+      <span class="span" style="--i:16;"></span>
+      <span class="span" style="--i:19;"></span>
+      <span class="span" style="--i:20;"></span>
+      <span class="span" style="--i:22;"></span>
+      <span class="span" style="--i:25;"></span>
+
+
+    </div>
+
+  </div>
+
+</body>
+</html>
