@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+    <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>PBCCHS</title>
+    <link rel="stylesheet" href="homebutton.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        body {
+            background: white;
+            min-height: 2000px;
+            width: 100%;
+        }
+
+      .linkglowbutton {
+            position: relative;
+            color: black;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.3cm;
+            letter-spacing: 0.001cm;
+            font-weight: bold;
+            padding: 3px 8px;
+            transition: 0.5s;
+            border: none;
+            font-family: serif;
+            margin-right: 10px;
+            height: 20vh;
+        }
+        .linkglowbutton:hover {
+            box-shadow: 0 0 35px var(--clr);
+            letter-spacing: 0.015cm;
+            color: var(--clr);
+            background: var(--clr);
+            border: none;
+        }
+        .linkglowbutton:before {
+            content: '';
+            position: absolute;
+            inset: 2px;
+            background: white;
+            border: none;
+        }
+        .spanglowbutton {
+            position: relative;
+            z-index: 1
+        }
+        .iglowbutton {
+            position: absolute;
+            inset: 0;
+        }
+        .iglowbutton::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 80%;
+            width: 8px;
+            height: 2.5px;
+            background: black;
+            transition: 0.5s;
+            transform: translateX(-50%) skewX(325deg);
+        }
+ .linkglowbutton:hover .iglowbutton::before {
+            width: 15px;
+            left: 20%;
+        }
+        .iglowbutton::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 20%;
+            width: 8px;
+            height: 2.5px;
+            background: black;
+            transition: 0.5s;
+            transform: translateX(-50%) skewX(325deg);
+        }
+    .linkglowbutton:hover .iglowbutton::after {
+            width: 15px;
+            left: 80%;
+        }
+        .glowbuttondiv {
+            margin-top: -55%;
+            width: 95%;
+            font-family: Times New Roman;
+            display: inline-block;
+            justify-content: right;
+            align-items: right;
+            height: 26px;
+            margin-left: 3%;
+            margin-bottom: 0;
+        }
+
+
+        .fi2firstbanner {
+            width: 100%;
+            margin-bottom: 5px;
+        }
+        .header {
+            width: 100%;
+            min-height: 30vh;
+            object-fit: cover;
+            background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(logo.jpg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            margin: default;
+        }
+        .div-of-home-page-photos-and-banner {
+            margin-left: 2%;
+            margin-right: 3%;
+        }
+
+
+        .div-of-home-text1,
+        .div-of-home-text2,
+        .div-of-home-text3, {
+            margin-top: 5%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        .image-home-1,
+        .image-home-2,
+        .image-home-3 {
+            margin-top: 5%;
+            width: 160px;
+            margin-left: 30%;
+            display: flex;
+            margin-bottom: -5%;
+        }
+        .home-all-history {
+            display: flex;
+            margin-top: 4%;
+            background: rgba(255,255,184,0.4);
+            margin-left: 2%;
+            margin-right: 3%;
+            padding: 2%;
+
+        }
+
+        .para {
+            font-size: 15px;
+            text-align: center;
+            display: flex;
+            background: rgba(155,255,135,0.4);
+            margin-top: -2%;
+            margin: 5%;
+            padding: 5%;
+            padding-bottom: 8%;
+            font-weight: 700;
+
+        }
+@media (max-width:500px) {
+            .home-all-history {
+                display: block;
+                margin: default;
+            }
+            .paralink1 {
+                font-size: 20px;
+                text-align: center;
+                display: flex;
+                background: rgba(155,255,135,0.6);
+                margin: 5%;
+                margin-left: 5%;
+                padding-left: 17%;
+                padding-right: 14%;
+                padding-top: 2%;
+                padding-bottom: 2%;
+                font-weight: 800;
+                margin-top: -9%;
+                text-decoration: none;
+                margin-bottom: 19%;
+            }
+            .image-home-1,
+            .image-home-2,
+            .image-home-3 {
+                margin-top: 5%;
+                width: 150px;
+                margin-left: 30%;
+                display: flex;
+                margin-bottom: -5%;
+            }
+    
+            
+            
+        }
+@media (min-width:550px) and (max-width:999px) {
+            .paralink1 {
+                font-size: 20px;
+                text-align: center;
+                display: flex;
+                background: rgba(155,255,135,0.6);
+                margin: 5%;
+                margin-left: 5%;
+                padding-left: 14%;
+                padding-right: 14%;
+                padding-top: 2%;
+                padding-bottom: 2%;
+                font-weight: 800;
+                margin-top: -9%;
+                text-decoration: none;
+            }
+            .image-home-1,
+            .image-home-2,
+            .image-home-3 {
+                margin-top: 5%;
+                width: 160px;
+                margin-left: 22%;
+                display: flex;
+                margin-bottom: -5%;
+            }
+                    
+        }
+@media (min-width:1000px) {
+            .home-all-history {
+                display: flex;
+                margin: default;
+            }
+            .paralink1 {
+                font-size: 20px;
+                text-align: center;
+                display: flex;
+                background: rgba(155,255,135,0.6);
+                margin: 5%;
+                margin-left: 5%;
+                padding-left: 14%;
+                padding-right: 12%;
+                padding-top: 2%;
+                padding-bottom: 2%;
+                font-weight: 800;
+                margin-top: -9%;
+                text-decoration: none;
+            }
+            .image-home-1,
+            .image-home-2,
+            .image-home-3 {
+                margin-top: 5%;
+                width: 160px;
+                margin-left: 18%;
+                display: flex;
+                margin-bottom: -5%;
+            }
+        
+}
+        
+        .paralink-header {
+            font-size: 20px;
+            text-align: center;
+            display: flex;
+color: white;
+ background: linear-gradient(blue , blue) ;
+        
+
+            margin: 5%;
+            margin-left: 5%;
+            padding-left: 12%;
+            padding-right: 12%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            font-weight: 800;
+            margin-top: 5%;
+            margin-bottom: -5%;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+
+<div class="main-div-of-home-page">
+
+    <div class="home-container-of-banner-button-header">
+
+
+        <div class="div-of-home-page-photos-and-banner">
+            <img class="fi2firstbanner" src="building.png" alt="">
+            <div class="header"></div>
+        </div>
+        <div class="glowbuttondiv">
+            <a class="linkglowbutton" href="http://www.youtube.com" style="--clr:black"><span class="spanglowbutton">প্রচ্ছদ</span><i class="iglowbutton"></i></a>
+            <a class="linkglowbutton" style="--clr:rgb(200,200,0)"><span class="spanglowbutton">প্রশাসনিক</span><i class="iglowbutton"></i></a>
+            <a class="linkglowbutton" href="#" style="--clr:rgb(30,200,30)"><span class="spanglowbutton">একাডেমিক</span><i class="iglowbutton"></i></a>
+            <a class="linkglowbutton" style="--clr:rgb(0,205,205)"><span class="spanglowbutton">এডমিশন</span><i class="iglowbutton"></i></a>
+            <a class="linkglowbutton" style="--clr:rgb(255,34,0)"><span class="spanglowbutton">নোটিশ</span><i class="iglowbutton"></i></a>
+            <a class="linkglowbutton" style="--clr:rgb(205,170,0)"><span class="spanglowbutton">ফলাফল</span><i class="iglowbutton"></i></a>
+            <a class="linkglowbutton" style="--clr:rgb(120,205,255)"><span class="spanglowbutton">যোগাযোগ</span><i class="iglowbutton"></i></a>
+        </div>
+    </div>
+    <div class="home-all-history">
+
+        <div class="div-of-home-text1">
+
+            <p class="paralink-header">
+       প্রতিষ্ঠানের&nbsp;ইতিহাস
+            </p>
+            <img class="image-home-1" src="schoollogo.png.jpg">
+            <p class="para">
+
+                শিক্ষার দিক বিবেচনা করে চট্টগ্রাম মহানগরীর ১৮নং ওয়ার্ড, পূর্ব বাকলিয়া এলাকার গণ্যমান্য ব্যক্তিবর্গ এবং সাবেক মৎস্য ও পশুসম্পদ মন্ত্রী জনাব আলহাজ্ব আব্দুল্লাহ-আল-নোমান সহ ১৭/০১/২০০৩ইং সালে অত্র বিদ্যালয়টি মধ্যম বাকলিয়া উচ্চ বিদ্যালয় নামে প্রতিষ্ঠা করেন। যেহেতু বিদ্যালয়টি মধ্যম বাকলিয়া এলাকায় অবস্থিত নয় সেহেতু বিদ্যালয়ের নাম পরিবর্তন করার জন্য গত ০৯/০১/২০০৫ইং এলাকার ৫০(পঞ্চাশ) জন মানুষের স্বাক্ষরিত একটি
+
+            </p>
+            
+            
+            
+            <a class="paralink1" href="www.youtube.com"><p class="paralink1">
+                [আরো&nbsp;পড়ুন]
+            </p>
+            </a>
+        </div>
+
+        <div class="div-of-home-text2">
+            <p class="paralink-header">
+                সভাপতি&nbsp;
+            </p>
+
+            <img class="image-home-2" src="schoollogo.png.jpg">
+            <p class="para">
+
+                বন্দর নগরী চট্টগ্রামের প্রাণকেন্দ্রে প্রতিষ্ঠিত পূর্ব বাকলিয়া সিটি কর্পোরেশন উচ্চ বিদ্যালয় প্রতিষ্ঠালগ্ন হতেই শিক্ষাক্ষেত্রে গুরুত্বপূর্ণ অবদান রেখে চলেছে। উন্নত জাতি গঠনের লক্ষ্যে এই প্রতিষ্ঠান শিক্ষার্থীদের মেধা ও মননের বিকাশে বিভিন্ন সহশিক্ষা কার্যক্রম সাফল্যের সাথে পরিচালনা করছে। প্রতিষ্ঠানকে আধুনিক ও যুগোপযোগীকরণের লক্ষ্যে বর্তমানে ওয়েবসাইটের মাধ্যমে বিভিন্ন সেবা প্রদান কার্যক্রম চলমান রয়েছে। ডিজিটাল বিপ্লবের এই উদ্যেগকে আমি
+
+            </p>
+            
+            
+            
+            
+            <a class="paralink1" href="www.youtube.com"><p class="paralink1">
+                [আরো&nbsp;পড়ুন]
+            </p>
+            </a>
+        </div>
+        <div class="div-of-home-text3">
+            <p class="paralink-header">
+                 প্রধান&nbsp;শিক্ষক
+            </p>
+            <img class="image-home-3" src="schoollogo.png.jpg">
+            <p class="para">
+
+                অনাবিল প্রাকৃতিক সৌন্দর্যের লীলাভূমি চট্টগ্রাম মহানগরীর প্রাণকেন্দ্রে অবস্থিত শিক্ষা প্রতিষ্ঠান পূর্ব বাকলিয়া সিটি কর্পোরেশন উচ্চ বিদ্যালয়। ২০০৩ সালে স্থাপিত এই বিদ্যালয় শিক্ষার্থীদের মেধা ও মননকে লালন ও শাণিত করার মাধ্যমে দেশের যোগ্য ভবিষ্যৎ নাগরিক গড়ে তোলার ক্ষেত্রে বরাবরই উল্লেখযোগ্য ভূমিকা পালন করে আসছে। শিক্ষা মানবসম্পদ ও জাতীয় উন্নয়নের মূল হাতিয়ার। পূর্ব বাকলিয়া সিটি কর্পোরেশন উচ্চ
+            </p>
+            
+            
+
+            <a class="paralink1" href="www.youtube.com"><p class="paralink1">
+                [আরো&nbsp;পড়ুন]
+            </p>
+            </a>
+        </div>
+
+    </div>
+</div>
+<body>
+</body>
+</html>

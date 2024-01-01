@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+    <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>PBCCHS</title>
+    <link rel="stylesheet" href="homebutton.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        body {
+            background: white;
+            height: 4000px;
+            width: 100%;
+        }
+
+        .linkglowbutton {
+            position: relative;
+            color: black;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.2cm;
+            letter-spacing: 0.001cm;
+            font-weight: 900;
+            padding: 3px 8px;
+            transition: 0.5s;
+            border: none;
+            font-family: serif;
+            margin-right: 2px;
+            height: 2.5vh;
+        }
+        .linkglowbutton:hover {
+            box-shadow: 0 0 15px var(--clr);
+            letter-spacing: 0.015cm;
+            color: var(--clr);
+            background: var(--clr);
+            border: none;
+        }
+        .linkglowbutton:before {
+            content: '';
+            position: absolute;
+            inset: 2px;
+            background: white;
+            border: none;
+        }
+        .spanglowbutton {
+            position: relative;
+            z-index: 1
+        }
+        .iglowbutton {
+            position: absolute;
+            inset: 0;
+        }
+        .iglowbutton::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 80%;
+            width: 8px;
+            height: 2.2px;
+            background: black;
+            transition: 0.5s;
+            transform: translateX(-50%) skewX(325deg);
+        }
+        .linkglowbutton:hover .iglowbutton::before {
+            width: 15px;
+            left: 20%;
+        }
+        .iglowbutton::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 20%;
+            width: 8px;
+            height: 2.5px;
+            background: black;
+            transition: 0.5s;
+            transform: translateX(-50%) skewX(325deg);
+        }
+        .linkglowbutton:hover .iglowbutton::after {
+            width: 15px;
+            left: 80%;
+        }
+        .glowbuttondiv {
+            margin-top: -55%;
+            width: 100%;
+            font-family: Times New Roman;
+            display: block;
+            justify-content: right;
+            align-items: right;
+            height: 2.1vh;
+            margin-bottom: 0;
+            transform: translateX(60px);
+        }
+
+
+        .fi2firstbanner {
+            width: 100%;
+            margin-bottom: 10px;
+            margin-top: 80px;
+
+        }
+
+        .home-background {
+            display: flex;
+            width: 100%;
+            min-height: 30vh;
+            position: center;
+            object-fit: cover;
+        }
+
+        .div-of-home-page-photos-and-banner {
+            margin-left: 2%;
+            margin-right: 3%;
+        }
+
+        .home-container-of-banner-button-header {
+            margin-bottom: 1px;
+        }
+        .div-of-home-text1,
+        .div-of-home-text2,
+        .div-of-home-text3, {
+            margin-top: 5%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex: 1;
+        }
+
+        .image-home-1,
+        .image-home-2,
+        .image-home-3 {
+            margin-top: 5%;
+            width: 160px;
+            margin-left: 30%;
+            display: flex;
+            margin-bottom: -5%;
+        }
+        .home-all-history {
+            display: flex;
+            margin-top: 30px;
+            background: tan;
+            margin-left: 2%;
+            margin-right: 3%;
+            padding: 2%;
+
+        }
+
+        .para {
+            font-size: 15px;
+            text-align: center;
+            display: flex;
+            background: crimson;
+            margin-top: -2%;
+            margin: 5%;
+            padding: 3%;
+            padding-bottom: 5%;
+            font-weight: 500;
+
+        }
+@media (max-width:700px) {
+    .last-para{
+    text-align: center;
+    font-size: 10px;
+}
+            .div-of-home-chart-1 , .div-of-home-chart-2,
+            .div-of-home-chart-3 , .div-of-home-chart-4 {
+
+                margin-top: 5%;
+                margin-bottom: 5%;
+                background: skyblue;
+                margin-left: 4%;
+                margin-right: 4%;
+                align-items: center;
+                justify-content: center;
+
+
+            }
+              
+.hr{
+    
+    background: chocolate;
+    padding-top: 10px;
+    border: none;
+}          .last-div {
+                display: block;
+                padding-top: 10%;
+                padding-bottom: 10%;
+            }
+
+            .li-of-charts {
+                margin-left: 25%;
+            }
+            .li-of-charts-second {
+                margin-left: 25%;
+                
+            }
+
+            .div-of-home-chart {
+                display: block;
+                padding-top: 10%;
+                padding-bottom: 10%;
+            }
+
+            .home-all-history {
+                display: block;
+                margin: default;
+            }
+            .paralink1 {
+                font-size: 20px;
+                text-align: center;
+                display: flex;
+                background: chocolate;
+                margin: 5%;
+                margin-left: 5%;
+                padding-left: 17%;
+                padding-right: 14%;
+                padding-top: 1%;
+                padding-bottom: 1%;
+                font-weight: 800;
+                margin-top: -6%;
+                text-decoration: none;
+                margin-bottom: 1%;
+            }
+            .image-home-1,
+            .image-home-2,
+            .image-home-3 {
+                margin-top: 5%;
+                width: 150px;
+                margin-left: 30%;
+                display: flex;
+                margin-bottom: -5%;
+            }
+            .div-of-home-text1 {
+                margin-top: 55%;
+            }
+            .glowbuttondiv {
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                height: 2.2vh;
+            }
+
+        .para-chart-1-second {
+            font-size: 20px;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 70px;
+            margin-right: 9%;
+            margin-left: 9%;
+            background: tan;
+            transform: translateY(20%);
+            text-align: center;
+        }
+        .anchor-of-li-chart-1-second {
+            font-size: 18px;
+            text-decoration: none;
+            text-align: center;
+            color: blue;
+            font-weight: 750;
+            
+        }
+        }
+@media (min-width:701px) {
+    
+.hr{
+    
+    background: tansparent;
+    padding-top: 0px;
+    border: none;
+}
+            body {
+                background: white;
+                height: 2000px;
+                width: 100%;
+            }
+                   .anchor-of-li-chart-1-second {
+            
+            text-decoration: none;
+            text-align: center;
+            color: blue;
+            font-weight: 750;
+        }
+                .anchor-of-li-chart-1-second {
+            font-size: 8px;
+            text-decoration: none;
+            text-align: center;
+            color: blue;
+            font-weight: 750;
+            
+        }
+        .last-para{
+    text-align: center;
+    font-size: 7px;
+}
+        .para-chart-1-second {
+            font-size: 10px;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 70px;
+            margin-right: 9%;
+            margin-left: 9%;
+            background: tan;
+            transform: translateY(20%);
+            text-align: center;
+        }
+            .div-of-home-chart-1 , .div-of-home-chart-2,
+            .div-of-home-chart-3 , .div-of-home-chart-4 {
+                margin-top: 5%;
+                margin-bottom: 5%;
+                background: skyblue;
+                margin-left: 1%;
+                margin-right: 1%;
+                align-items: center;
+                justify-content: center;
+                flex: 1;
+
+            }
+            .li-of-charts {
+                margin-left: 10%;
+
+            }
+            .div-of-home-chart-1-second,.div-of-home-chart-2-second,.div-of-home-chart-3-second {
+                margin-top: 5%;
+                margin-bottom: 5%;
+                background: skyblue;
+                margin-left: 2%;
+                margin-right: 2%;
+                align-items: center;
+                justify-content: center;
+                flex: 1;
+
+            }
+            .last-para{
+                text-align: center;
+            }
+            .last-div{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-right: 50px;
+                padding-left: 50px;
+
+            }
+            .div-of-home-chart-1-second {
+                margin-top: 5%;
+                margin-bottom: 5%;
+                background: skyblue;
+                margin-left: 1%;
+                margin-right: 1%;
+                align-items: center;
+                justify-content: center;
+                flex: 1.52;
+            }
+
+            .div-of-home-chart-second {
+                display: flex;
+
+            }
+            .li-of-charts-second {
+                margin-left: 10%;
+            }
+            .div-of-home-chart {
+                display: flex;
+
+            }
+            .paralink1 {
+                font-size: 20px;
+                text-align: center;
+                display: flex;
+                background: chocolate;
+                margin: 5%;
+                margin-left: 5%;
+                padding-left: 14%;
+                padding-right: 14%;
+                padding-top: -2%;
+                padding-bottom: -2%;
+                font-weight: 800;
+                margin-top: -6%;
+                text-decoration: none;
+                margin-bottom: 3%;
+            }
+            .image-home-1,
+            .image-home-2,
+            .image-home-3 {
+                margin-top: 5%;
+                width: 160px;
+                margin-left: 22%;
+                display: flex;
+                margin-bottom: -5%;
+            }
+            .glowbuttondiv {
+
+                justify-content: right;
+                align-items: right;
+                display: inline-block;
+                width: 70%;
+                margin-top: -50%;
+                
+
+            }
+            .news-ticker-home-page .breaking-news {
+                position: absolute;
+                background: green;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                padding: 0 4px;
+                color: white;
+                font-size: 2px;
+                font-weight: bold;
+                z-index: 200;
+                width: 10%;
+                text-decoration: none;
+            }
+
+        }
+
+
+        .paralink-header {
+            font-size: 20px;
+            text-align: center;
+            display: flex;
+            color: rgb(255,255,0);
+            background: linear-gradient(black , rgba(0,0,0,0.5));
+            margin: 5%;
+            margin-left: 5%;
+            padding-left: 12%;
+            padding-right: 12%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            font-weight: 800;
+            margin-top: 5%;
+            margin-bottom: -5%;
+            text-decoration: none;
+        }
+        .news-ticker-home-page {
+            position: fixed;
+
+            font-family: Roboto ,Sans-Serif;
+            box-shadow: 0 4px 8px -4px rgba(0, 0, 0 ,1.0);
+            text-decoration: none;
+            width: 100%;
+            top: 0;
+            left: 0;
+            margin-left: 0%;
+            margin-top: 2%;
+            margin-right: 5%;
+            overflow: hidden;
+            background: white;
+        }
+        .news-ticker-home-page .breaking-news {
+            position: absolute;
+            background: brown;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding: 0 4px;
+            color: white;
+            font-size: 2px;
+            font-weight: bold;
+            z-index: 200;
+            width: 100px;
+            text-decoration: none;
+
+        }
+        .news-ticker-home-page ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            animation: scroll 14s infinite linear;
+            text-decoration: none;
+        }
+        .news-ticker-home-page ul li {
+            white-space: nowrap;
+            padding: 15px 30px;
+            color: blue;
+            position: relative;
+            text-decoration: none;
+        }
+        .news-ticker-home-page ul li::after {
+            width: 1px;
+            height: 100%;
+            background: black;
+            top: 0;
+            right: 0;
+            text-decoration: none;
+        }
+        .news-ticker-home-page ul li:last-child::after {
+            display: none;
+            text-decoration: none;
+        }
+@keyframes scroll {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+        .ul-of-all-newses {
+            text-decoration: none;
+        }
+        .para-breaking {
+            margin-right: 20px;
+            margin-left: 10px;
+            font-size: 15px;
+            margin-bottom: 10px;
+
+        }
+        .para-news {
+            margin-top: 20px;
+            margin-left: -45px;
+            font-size: 15px;
+
+        }
+        .link-news-breaking {
+            text-decoration: none;
+            color: black;
+        }
+
+        .div-of-home-chart-1 , .div-of-home-chart-2,
+        .div-of-home-chart-3 , .div-of-home-chart-4 {
+            margin-top: 5%;
+            margin-bottom: 5%;
+            background: lime;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+            border-radius: 20px;
+
+        }
+
+        .div-of-home-chart {
+
+            background: rgb(255,255,184,0.4);
+            margin-left: 2%;
+            margin-right: 3%;
+
+        }
+        .para-chart-1 {
+            font-size: 20px;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 70px;
+            margin-right: 10%;
+            margin-left: 10%;
+            background: tan;
+            transform: translateY(20%);
+            text-align: center;
+        }
+
+        .anchor-of-li-chart-1 {
+            font-size: 20px;
+            text-decoration: none;
+            text-align: center;
+            color: blue;
+            font-weight: 750;
+        }
+        .div-of-home-chart-1-second,.div-of-home-chart-2-second,.div-of-home-chart-3-second {
+            margin-top: 5%;
+            margin-bottom: 5%;
+            background: lime;
+            align-items: center;
+            justify-content: center;
+             
+            border-radius: 20px;
+
+        }
+
+        .div-of-home-chart-second {
+
+            background: rgb(255,255,184,0.4);
+            margin-left: 2%;
+            margin-right: 3%;
+            margin-bottom: 30px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+        }
+
+
+
+        .last-div{ 
+
+            background: rgb(255,255,184,0.4);
+            margin-left: 2%;
+            margin-right: 3%;
+            margin-bottom: 30px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+        }
+
+    </style>
+</head>
+
+<div class="main-div-of-home-page">
+
+    <div class="home-container-of-banner-button-header">
+
+
+        <div class="div-of-home-page-photos-and-banner">
+            <img class="fi2firstbanner" src="building.png" alt="">
+            <div class="news-ticker-home-page">
+                <div class="breaking-news">
+                    <p class="para-breaking">
+                        <span>Breaking</span>
+                    </p>
+                    <p class="para-news">
+                        News
+                    </p>
+                </div>
+                <ul class="ul-of-all-newses">
+                    <li class="li-of-charts-news"><a class="link-news-breaking" href="https/www.youtube.com">helo hello halsjdj</a></li>
+                    <li class="li-of-charts-news"><a class="link-news-breaking" href="https/www.youtube.com">helo hello halsjdj</a></li>
+                    <li class="li-of-charts-news"><a class="link-news-breaking" href="https/www.youtube.com">helo hello halsjdj</a></li>
+                </ul>
+
+            </div>
+
+            <div class="header">
+                <img class="home-background" src="logo.jpg">
+            </div>
+        </div>
+        <div class="glowbuttondiv">
+            <a class="linkglowbutton" href="http://www.youtube.com" style="--clr:silver"><span class="spanglowbutton">প্রচ্ছদ</span><i class="iglowbutton"></i></a>
+            <a class="linkglowbutton" style="--clr:skyblue"><span class="spanglowbutton">প্রশাসনিক</span><i class="iglowbutton"></i></a>
+            <a class="linkglowbutton" href="#" style="--clr:lime"><span class="spanglowbutton">একাডেমিক</span><i class="iglowbutton"></i></a>
+            <a class="linkglowbutton" style="--clr:rgb(0,205,205)"><span class="spanglowbutton">এডমিশন</span><i class="iglowbutton"></i></a>
+            <a class="linkglowbutton" style="--clr:tan"><span class="spanglowbutton">নোটিশ</span><i class="iglowbutton"></i></a>
+            <a class="linkglowbutton" style="--clr:orange"><span class="spanglowbutton">ফলাফল</span><i class="iglowbutton"></i></a>
+            <a class="linkglowbutton" style="--clr:blue"><span class="spanglowbutton">যোগাযোগ</span><i class="iglowbutton"></i></a>
+        </div>
+    </div>
+    <div class="home-all-history">
+
+        <div class="div-of-home-text1">
+
+            <p class="paralink-header">
+                প্রতিষ্ঠানের&nbsp;ইতিহাস
+            </p>
+            <img class="image-home-1" src="schoollogo.png.jpg">
+            <p class="para">
+
+                শিক্ষার দিক বিবেচনা করে চট্টগ্রাম মহানগরীর ১৮নং ওয়ার্ড, পূর্ব বাকলিয়া এলাকার গণ্যমান্য ব্যক্তিবর্গ এবং সাবেক মৎস্য ও পশুসম্পদ মন্ত্রী জনাব আলহাজ্ব আব্দুল্লাহ-আল-নোমান সহ ১৭/০১/২০০৩ইং সালে অত্র বিদ্যালয়টি মধ্যম বাকলিয়া উচ্চ বিদ্যালয় নামে প্রতিষ্ঠা করেন। যেহেতু বিদ্যালয়টি মধ্যম বাকলিয়া এলাকায় অবস্থিত নয় সেহেতু বিদ্যালয়ের নাম পরিবর্তন করার জন্য গত ০৯/০১/২০০৫ইং এলাকার ৫০(পঞ্চাশ) জন মানুষের স্বাক্ষরিত একটি
+
+            </p>
+
+
+
+            <a class="paralink1" href="http://www.youtube.com"><p class="paralink1">
+                [আরো&nbsp;পড়ুন]
+            </p>
+            </a>
+        </div>
+
+        <div class="div-of-home-text2">
+            <p class="paralink-header">
+                সভাপতি&nbsp;
+            </p>
+
+            <img class="image-home-2" src="schoollogo.png.jpg">
+            <p class="para">
+
+                বন্দর নগরী চট্টগ্রামের প্রাণকেন্দ্রে প্রতিষ্ঠিত পূর্ব বাকলিয়া সিটি কর্পোরেশন উচ্চ বিদ্যালয় প্রতিষ্ঠালগ্ন হতেই শিক্ষাক্ষেত্রে গুরুত্বপূর্ণ অবদান রেখে চলেছে। উন্নত জাতি গঠনের লক্ষ্যে এই প্রতিষ্ঠান শিক্ষার্থীদের মেধা ও মননের বিকাশে বিভিন্ন সহশিক্ষা কার্যক্রম সাফল্যের সাথে পরিচালনা করছে। প্রতিষ্ঠানকে আধুনিক ও যুগোপযোগীকরণের লক্ষ্যে বর্তমানে ওয়েবসাইটের মাধ্যমে বিভিন্ন সেবা প্রদান কার্যক্রম চলমান রয়েছে। ডিজিটাল বিপ্লবের এই উদ্যেগকে আমি
+
+            </p>
+
+
+
+
+            <a class="paralink1" href="www.youtube.com"><p class="paralink1">
+                [আরো&nbsp;পড়ুন]
+            </p>
+            </a>
+        </div>
+        <div class="div-of-home-text3">
+            <p class="paralink-header">
+                প্রধান&nbsp;শিক্ষক
+            </p>
+            <img class="image-home-3" src="schoollogo.png.jpg">
+            <p class="para">
+
+                অনাবিল প্রাকৃতিক সৌন্দর্যের লীলাভূমি চট্টগ্রাম মহানগরীর প্রাণকেন্দ্রে অবস্থিত শিক্ষা প্রতিষ্ঠান পূর্ব বাকলিয়া সিটি কর্পোরেশন উচ্চ বিদ্যালয়। ২০০৩ সালে স্থাপিত এই বিদ্যালয় শিক্ষার্থীদের মেধা ও মননকে লালন ও শাণিত করার মাধ্যমে দেশের যোগ্য ভবিষ্যৎ নাগরিক গড়ে তোলার ক্ষেত্রে বরাবরই উল্লেখযোগ্য ভূমিকা পালন করে আসছে। শিক্ষা মানবসম্পদ ও জাতীয় উন্নয়নের মূল হাতিয়ার। পূর্ব বাকলিয়া সিটি কর্পোরেশন উচ্চ
+            </p>
+
+
+
+            <a class="paralink1" href="www.youtube.com"><p class="paralink1">
+                [আরো&nbsp;পড়ুন]
+            </p>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<div class="div-of-home-chart">
+
+    <div class="div-of-home-chart-1">
+        <p class="para-chart-1">
+            শিক্ষার্থীর&nbsp;তথ্য
+        </p>
+
+        <li class="li-of-charts"><a class="anchor-of-li-chart-1">সিলেবাস</a></li>
+        <li class="li-of-charts"><a href="wjjcie" class="anchor-of-li-chart-1">ক্লাস&nbsp;রুটিন</a></li>
+
+
+
+    </div>
+    <div class="div-of-home-chart-2">
+        <p class="para-chart-1">
+            শিক্ষকদের&nbsp;তথ্য
+        </p>
+
+        <li class="li-of-charts"><a class="anchor-of-li-chart-1">শিক্ষকবৃন্দ</a></li>
+
+        <li class="li-of-charts"><a class="anchor-of-li-chart-1">অনাপত্তি&nbsp;সনদ</a></li>
+        <li class="li-of-charts"><a class="anchor-of-li-chart-1">শূন্য&nbsp;তালিকা</a>
+        </li>
+
+    </div>
+
+    <div class="div-of-home-chart-3">
+        <p class="para-chart-1">
+            ডাউনলোড
+        </p>
+
+        <li class="li-of-charts"><a class="anchor-of-li-chart-1" href="http://www.google.com">ইউনিক&nbsp;আইডি&nbsp;ফর্ম</a></li>
+
+
+
+    </div>
+    <div class="div-of-home-chart-4">
+        <p class="para-chart-1">
+            একাডেমিক&nbsp;তথ্য
+        </p>
+
+        <li class="li-of-charts">
+            <a class="anchor-of-li-chart-1"> ই-বুক</a>
+        </li>
+        <li class="li-of-charts"><a class="anchor-of-li-chart-1">কম্পিউটার&nbsp;ল্যাব</a></li>
+        <li class="li-of-charts"><a class="anchor-of-li-chart-1">ক্লাস&nbsp;রুটিন</a>
+        </li>
+        <li class="li-of-charts"><a class="anchor-of-li-chart-1">সিলেবাস</a>
+        </li>
+
+    </div>
+
+</div>
+
+
+
+<div class="div-of-home-chart-second">
+
+    <div class="div-of-home-chart-1-second">
+        <p class="para-chart-1-second">
+           নোটিশ
+        </p>
+
+        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second">সিলেAir pollution is the most dangerous form of pollution, The cause is that we cannot control the air that we inhale. Air pollution can be defined as the presence, of gas asses such as oxides of carbon, sulphur and nitrogen in the air . There are a numbeবাস</a></li>
+        <li class="li-of-charts-second"><a href="wjjcie" class="anchor-of-li-chart-1-second">ক্লাস&nbsp;রুটিন</a></li>
+        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second">সিলেবাস</a></li>
+        <li class="li-of-charts-second"><a href="wjjcie" class="anchor-of-li-chart-1-second">ক্লাস&nbsp;রুটিন</a></li>
+        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second">সিলেবাস</a></li>
+        <li class="li-of-charts-second"><a href="wjjcie" class="anchor-of-li-chart-1-second">ক্লাস&nbsp;রুটিন</a></li>
+
+    </div>
+    <div class="div-of-home-chart-2-second">
+        <p class="para-chart-1-second">
+           অফিশিয়াল&nbsp;লিংক
+        </p>
+
+        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second">ব্যানবেইস</a></li>
+
+        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second">চট্টগ্রাম&nbsp;শিক্ষাবোর্ড</a></li>
+        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second">ঢাকা&nbsp;শিক্ষাবোর্ড</a>
+        </li>
+        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second">  
+মাউশি
+        </a>
+        </li>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+    <div class="div-of-home-chart-3-second">
+        <p class="para-chart-1-second">
+           গুরুত্বপূর্ণ&nbsp;লিংক
+        </p>
+
+        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
+            এসএসসি&nbsp;ফলাফল
+  </a></li>
+
+        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
+            শিক্ষক&nbsp;বাতায়ন
+  </a></li>
+          <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
+            মুক্তপাঠ
+  </a></li>
+          <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
+            ইএমএস
+  </a></li>
+
+    </div>
+
+
+</div>
+
+<div  class="last-div">
+    
+    <div class="last-line-1"><p class="last-para">এই&nbsp;ওয়েবসাইটের&nbsp;সকল&nbsp;স্বত্ব<br>বিদ্যালয়&nbsp;কর্তৃক&nbsp;সংরক্ষিত</p></div>
+<div class="last-line-1">
+    
+<div class="last-line-1"><p class="last-para">এই&nbsp;ওয়েবসাইটের&nbsp;সকল&nbsp;স্বত্ব&nbsp;বিদ্যালয়&nbsp;কর্তৃক&nbsp;সংরক্ষি</p></div>
+    
+    <hr class="hr">
+</div>
+<div class="last-line-1"><p class="last-para">DEVELOPED BY <strong>BBST</strong></p></div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<body>
+</body>
+</html>

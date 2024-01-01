@@ -1,0 +1,822 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial;
+
+        }
+
+        .linkglowbutton {
+            position: relative;
+            color: black;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.2cm;
+            letter-spacing: 0.001cm;
+            font-weight: 900;
+            padding: 3px 8px;
+            transition: 0.5s;
+            border: none;
+            font-family: serif;
+            margin-right: 2px;
+            height: 20px;
+            cursor: pointer;
+        }
+        .linkglowbutton:hover {
+            box-shadow: 0 0 15px var(--clr);
+            letter-spacing: 0.015cm;
+            color: var(--clr);
+            background: var(--clr);
+            border: none;
+        }
+        .linkglowbutton:before {
+            content: '';
+            position: absolute;
+            inset: 2px;
+            background: white;
+            border: none;
+        }
+        .spanglowbutton {
+            position: relative;
+            z-index: 1;
+        }
+        .iglowbutton {
+            position: absolute;
+            inset: 0;
+        }
+        .iglowbutton::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 80%;
+            width: 8px;
+            height: 2.2px;
+            background: black;
+            transition: 0.5s;
+            transform: translateX(-50%) skewX(325deg);
+        }
+        .linkglowbutton:hover .iglowbutton::before {
+            width: 15px;
+            left: 20%;
+        }
+        .iglowbutton::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 20%;
+            width: 8px;
+            height: 2.5px;
+            background: black;
+            transition: 0.5s;
+            transform: translateX(-50%) skewX(325deg);
+        }
+        .linkglowbutton:hover .iglowbutton::after {
+            width: 15px;
+            left: 80%;
+        }
+
+
+        .fi2firstbanner {
+            width: 100%;
+            margin-bottom: 10px;
+            margin-top: 80px;
+
+        }
+        .notice-div {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .notice-div tbody tr td a {
+            text-decoration: none;
+            color: #008892;
+        }
+        
+        tbody tr {
+            width: 100%;
+        }
+        tbody tr td {
+            padding: 15px;
+
+        }
+        .notice-div table thead tr th{
+            font-size: 25px;
+            padding: 5px;
+        }
+
+@media (max-width:700px) {
+            body {
+                background: white;
+            
+                width: 500px;
+
+            }
+
+            .shovapoti-speech {
+                font-size: 18px;
+            }
+            .close {
+                flex-direction: column;
+                padding: 10 10px;
+                display: flex;
+                width: 70px;
+                height: 70px;
+                background: lightblue;
+                justify-content: center;
+                transform: translateY(-160px) translateX(20px);
+                border-radius: 50px;
+
+            }
+            .hr3 , .hr4 {
+                border: none;
+                padding-top: 2px;
+                background: black;
+                color: black;
+                display: flex;
+            }
+            .hr3 {
+                transform: rotate(135deg);
+            }
+            .hr4 {
+                transform: rotate(45deg);
+                margin-top: -1px;
+            }
+            .menu {
+                height: 70px;
+                width: 70px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                transform: translateY(0) translateX(390px);
+                border: 2px solid blue;
+                background: blue;
+                border-radius: 35px;
+                margin-bottom: 8px;
+                padding: 8px;
+                color: white;
+            }
+            .last-para {
+                text-align: center;
+                font-size: 15px;
+            }
+
+            .div-of-home-chart-2-second-2-420 {
+                margin-top: 5%;
+                margin-bottom: 5%;
+                background: skyblue;
+                margin-left: 2%;
+                margin-right: 3%;
+                align-items: center;
+                justify-content: center;
+                flex: 1;
+                display: block;
+                border-radius: 20px;
+                background: lime;
+            }
+            .shovapoti-div {
+                margin-top: 5%;
+                margin-bottom: 5%;
+                background: skyblue;
+                margin-left: 2%;
+                margin-right: 3%;
+                align-items: center;
+                justify-content: center;
+                display: block;
+                border-radius: 20px;
+                background: lime;
+                padding-top: 5%;
+            }
+          
+            .hr {
+                background: chocolate;
+                padding-top: 10px;
+                border: none;
+
+            }
+            .last-div {
+                display: block;
+                padding-top: 10%;
+                padding-bottom: 10%;
+            }
+
+
+            .linkglowbutton {
+                position: relative;
+                color: black;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 0.4cm;
+                letter-spacing: 0.001cm;
+                font-weight: bold;
+                padding: 3px 8px;
+                transition: 0.5s;
+                border: none;
+                font-family: serif;
+                margin-right: 110px;
+                height: 30px;
+                display: flex;
+                margin-bottom: 15px;
+                margin-left: 20px;
+                text-align: center;
+            }
+
+
+            .glowbuttondiv-420 {
+
+
+                padding-top: 170px;
+                position: fixed;
+                height: 500px;
+                width: 220px;
+                border-radius: 10px;
+                margin-right: 6px;
+                z-index: 2;
+
+                background: orange;
+                margin-top: -4px;
+                right: -290px;
+                transition: 1s;
+            }
+            
+        .glowbuttondiv2-420{
+        transform: translateY(-100px);
+    }
+    
+
+ .div-para-address , .div-para-email , .div-para-telephone {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            flex: 1;
+            margin: 10px;
+            background: lime;
+            height: 180px;
+
+        }
+
+        .telephone-email-div{
+            display: flex;
+            flex-direction: row;
+            transform: translateY(1px);
+        }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+            
+            .form-contact{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+    .form-contact  input::placeholder ,
+            
+            .textarea-contact::placeholder{
+                color: rgba(0,0,0,0.5);
+                font-weight: bold;
+                font-size: 15px;
+                font-family: sens-serif;
+                transform: translateX(10px);
+                z-index: -2;
+                
+            }
+.form-contact input:hover , .textarea-contact:hover{
+    border: none;
+    box-shadow: 0 0 15px blue;
+    
+    
+    
+    
+}
+.form-contact input{
+                font-size: 15px;
+                font-weight: 500;
+                width: 400px;
+                height: 30px;
+                margin-top: 10px;
+                border: 3px solid lime;
+                box-shadow: 0 0 5px lime;
+            
+            }
+            .textarea-contact{
+                width: 400px;
+                height: 300px;
+                margin-top: 10px;
+                border: 3px solid lime;
+                box-shadow: 0 0 5px lime;
+            
+                
+            }
+            .submit-button{
+                width: 190px;
+                height: 50px;
+                background: blue;
+                color: yellow;
+                font-size: 28px;
+                border: none;
+                border-radius: 40px;
+                margin: 19px;
+
+            }
+            form h1{
+                font-family: Arial;
+            }
+            
+            
+            
+        
+        
+        
+        
+        
+        
+          .table-notice {
+                border: 6px solid #00D6FF;
+                width: 480px;
+
+            }
+            .thead-notice {
+                border: 2px solid #00D6FF;
+            }
+            .tbody-notice {
+                border: 2px solid #00D6FF;
+
+            }
+
+
+            .td1-notice {
+                width: 300px;
+            }
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+    
+    
+    
+    
+    
+        
+
+        
+@media (min-width:701px) {
+          .telephone-email-div{
+            display: flex;
+            flex-direction: row;
+            transform: translateY(1px);
+        }
+        
+    .div-para-address , .div-para-email , .div-para-telephone {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            flex: 1;
+            margin: 10px;
+            background: lime;
+            height: 180px;
+}
+            .shovapoti-speech {
+                font-size: 10px;
+            }
+            .div-menu {
+                display: none;
+            }
+            .close {
+                display: none;
+            }
+            .menu {
+                display: none;
+
+            }
+            .linkglowbutton {
+                position: relative;
+                color: black;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 0.4cm;
+                letter-spacing: 0.001cm;
+                font-weight: 900;
+                padding: 5px 10px;
+                transition: 0.5s;
+                border: none;
+                font-family: serif;
+                margin-right: 2px;
+                height: 2.5vh;
+            }
+            .hr2 {
+                display: none;
+            }
+            .hr {
+
+                background: tansparent;
+                padding-top: 0px;
+                border: none;
+            }
+            body {
+                background: white;
+            
+                width: 1000px;
+                margin-left: 5px;
+            }
+
+
+            .last-para {
+                text-align: center;
+                font-size: 7px;
+            }
+           
+          
+            .div-of-home-chart-2-second-2-420 {
+                margin-top: 5%;
+                margin-bottom: 5%;
+                background: skyblue;
+                margin-left: 2%;
+                margin-right: 2%;
+                align-items: center;
+                justify-content: center;
+                height: 250px;
+                width: 950px;
+                display: flex;
+                flex-direction: row;
+            }
+            
+            .last-para {
+                font-size: 15px;
+                text-align: center;
+            }
+            .last-div {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-right: 50px;
+                padding-left: 50px;
+
+            }
+
+
+            .glowbuttondiv-420 {
+                justify-content: center;
+                align-items: center;
+                text-align: right;
+                background: tan;
+                display: flex;
+                height: 50px;
+                width: 100%;
+                transform: translateY(1px);
+            }
+            .final-glowbuttondiv-420 {
+                width: 100%;
+                display: flex;
+                margin-bottom: 20px;
+
+
+            }
+
+
+
+            .news-ticker-home-page .breaking-news {
+                position: absolute;
+                background: green;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                padding: 0 4px;
+                color: white;
+                font-size: 2px;
+                font-weight: bold;
+                z-index: 200;
+                width: 10%;
+                text-decoration: none;
+            }
+
+
+
+
+
+
+
+
+
+
+
+                        .form-contact{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .form-contact input::placeholder ,
+            .textarea-contact::placeholder{
+                color: rgba(0,0,0,0.4);
+                font-weight: bold;
+                font-size: 19px;
+                font-family: sens-serif;
+                transform: translateX(10px);
+                
+            }
+.form-contact input:hover,  .textarea-contact:hover{
+    border: none;
+    box-shadow: 0 0 20px blue;}
+.form-contact input{
+                font-size: 19px;
+                font-weight: 700;
+                width: 700px;
+                height: 40px;
+                margin-top: 15px;
+                border: 3px solid lime;
+                box-shadow: 0 0 5px lime;
+            }
+            .textarea-contact{
+                width: 700px;
+                height: 400px;
+                margin-top: 10px;
+                border: 3px solid lime;
+                box-shadow: 0 0 5px lime;
+                box-sizing: border-box;
+                
+            }
+            .submit-button{
+                width: 220px;
+                height: 70px;
+                background: blue;
+                color: yellow;
+                font-size: 28px;
+                border: none;
+                border-radius: 40px;
+                margin: 19px;
+
+            }
+            form h1{
+                font-family: Arial;
+            }
+            
+            
+            
+        
+            
+            
+
+
+
+
+ .table-notice {
+                border: 5px solid #00D6FF;
+                width: 700px;
+
+            }
+            .thead-notice {
+                border: 2px solid #00D6FF;
+            }
+            .tbody-notice {
+                border: 2px solid #00D6FF;
+
+            }
+
+
+            .td1-notice {
+                width: 500px;
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+        .news-ticker-home-page {
+            position: fixed;
+
+            font-family: Roboto ,Sans-Serif;
+            box-shadow: 0 4px 8px -4px rgba(0, 0, 0 ,1.0);
+            text-decoration: none;
+            width: 100%;
+            top: 0;
+            left: 0;
+            margin-left: 0%;
+            margin-top: 2%;
+            margin-right: 5%;
+            overflow: hidden;
+            background: white;
+        }
+        .news-ticker-home-page .breaking-news {
+            position: absolute;
+            background: brown;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding: 0 4px;
+            color: white;
+            font-size: 2px;
+            font-weight: bold;
+            z-index: 200;
+            width: 100px;
+            text-decoration: none;
+
+        }
+        .news-ticker-home-page ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            animation: scroll 14s infinite linear;
+            text-decoration: none;
+        }
+        .news-ticker-home-page ul li {
+            white-space: nowrap;
+            padding: 15px 30px;
+            color: blue;
+            position: relative;
+            text-decoration: none;
+        }
+        .news-ticker-home-page ul li::after {
+            width: 1px;
+            height: 100%;
+            background: black;
+            top: 0;
+            right: 0;
+            text-decoration: none;
+        }
+        .news-ticker-home-page ul li:last-child::after {
+            display: none;
+            text-decoration: none;
+        }
+@keyframes scroll {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+        .ul-of-all-newses {
+            text-decoration: none;
+        }
+        .para-breaking {
+            margin-right: 20px;
+            margin-left: 10px;
+            font-size: 15px;
+            margin-bottom: 10px;
+
+        }
+        .para-news {
+            margin-top: 20px;
+            margin-left: -45px;
+            font-size: 15px;
+
+        }
+        .link-news-breaking {
+            text-decoration: none;
+            color: black;
+        }
+
+
+
+        .last-div {
+
+            background: rgb(255,255,184,0.4);
+            margin-left: 2%;
+            margin-right: 3%;
+            margin-bottom: 30px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+        }
+
+        .hr2 {
+            color: black;
+            background: white;
+            padding: 3px;
+            border: none;
+            margin: 5px;
+            border-radius: 3px;
+        }
+        .div-of-home-chart-2-second-b , .div-of-home-chart-2-second-c {
+            width: 120px;
+        }
+        .div-of-home-chart-2-second-a {
+            width: 150px;
+        }
+        .google , .facebook , .youtube ,.address-icon ,.email-icon ,.telephone-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .last-h3 {
+            text-align: center;
+        }
+
+
+
+        .address-h2 , .telephone-h2 , .email-h2 {
+            text-align: center;
+        }
+        .address-para , .telephone-para , .email-para {
+            text-align: center;
+            font-weight: bold;
+        }
+        .div-menu {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            width: 100%;
+            background: deepskyblue;
+            margin-bottom: 10px;
+        }
+
+        .shovapoti-hr1 {
+            display: flex;
+            width: 80%;
+            background: black;
+            border: 3px solid black;
+
+        }
+        .shovapoti-div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .shovapoti-para {
+            text-align: center;
+        }
+        .shovapoti-img {
+            width: 200px;
+            
+        }
+        .shovapoti-img-div {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .shovapoti-speech-div {
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 5%;
+
+        }
+
+
+        

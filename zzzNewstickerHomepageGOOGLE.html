@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+    <title>MR.BEKUB </title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .news-ticker-home-page {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            font-family: "Roboto",Sans-Serif;
+            box-shadow: 0 4px 8px -4px rgba(0, 0, 0 ,1.0);
+            margin-top: 10px;
+            text-decoration: none;
+        }
+        .news-ticker-home-page .breaking-news {
+            position: absolute;
+            background: green;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding: 0 4px;
+            color: white;
+            font-size: 2px;
+            font-weight: bold;
+            z-index: 200;
+            width: 50px;
+            text-decoration: none;
+
+        }
+        .news-ticker-home-page ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            animation: scroll 14s infinite linear;
+            text-decoration: none;
+        }
+        .news-ticker-home-page ul li {
+            white-space: nowrap;
+            padding: 10px 24px;
+            color: blue;
+            position: relative;
+            text-decoration: none;
+        }
+        .news-ticker-home-page ul li::after {
+            width: 1px;
+            height: 100%;
+            background: black;
+            top: 0;
+            right: 0;
+            text-decoration: none;
+        }
+        .news-ticker-home-page ul li:last-child::after {
+            display: none;
+            text-decoration: none;
+        }
+@keyframes scroll {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-1080px);
+            }
+        }
+        .ul-of-all-newses {
+            text-decoration: none;
+        }
+        .para-breaking {
+            margin-right: 20px;
+            margin-left: 6px;
+            font-size: 10px;
+            margin-bottom: 15px;
+
+        }
+        .para-news {
+            margin-top: 30px;
+            margin-left: -53px;
+            font-size: 10px;
+        }
+        .link-news-breaking{
+            text-decoration: none;
+            color: black;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="news-ticker-home-page">
+        <div class="breaking-news">
+            <p class="para-breaking">
+                <span>Breaking</span>
+            </p>
+            <p class="para-news">
+                News
+            </p>
+        </div>
+        <ul class="ul-of-all-newses">
+            <li><a class="link-news-breaking" href="https/www.youtube.com">helo hello halsjdj</a></li>
+            <li><a class="link-news-breaking" href="https/www.youtube.com">helo hello halsjdj</a></li>
+            <li><a class="link-news-breaking" href="https/www.youtube.com">helo hello halsjdj</a></li>
+        </ul>
+
+    </div>
+
+</body>
+</html>
