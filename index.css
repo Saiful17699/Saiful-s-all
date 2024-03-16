@@ -1,0 +1,58 @@
+@media (min-width:701px) {
+.proshasonik-link-container-11{
+
+flex-direction: column;
+display: none;
+align-items: right;
+justify-content: right;
+width: 200px;
+transform: translateX(214px) translateY(20px);
+height: 0;
+transition: 1s;
+
+
+}
+.proshasonik-link-container-22{
+
+flex-direction: column;
+display: none;
+align-items: right;
+justify-content: right;
+width: 200px;
+transform: translateX(375px) translateY(20px);
+height: 0;
+transition: 1s;
+
+
+}
+
+
+}
+
+@media (max-width:700px) {
+.proshasonik-link-container-11{
+
+flex-direction: column;
+display: none;
+align-items: right;
+justify-content: right;
+width: 200px;
+transform: translateX(50px) translateY(-396px);
+height: 0;
+transition: 1s;
+
+
+}
+.proshasonik-link-container-22{
+
+flex-direction: column;
+display: none;
+align-items: right;
+justify-content: right;
+width: 200px;
+transform: translateX(50px) translateY(-303px);
+height: 0;
+transition: 1s;
+
+
+}}

@@ -6,13 +6,11 @@
     <title>PBCCHS</title>
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="home.css" type="text/css" media="all" />
     <link rel="stylesheet" href="420.css"/>
     
 <style>
-    .glowbuttondiv2-420{
-        transform: translateY(-100px);
-    }
-    
+
     
     
     
@@ -26,7 +24,7 @@
     <div class="home-container-of-banner-button-header">
 
 
-        <div class="div-of-home-page-photos-and-banner">
+                <div class="div-of-home-page-photos-and-banner">
             <img class="fi2firstbanner" src="building.png" onclick="hideMenu()">
             <div class="news-ticker-home-page" onclick="hideMenu()">
                 <div class="breaking-news">
@@ -46,35 +44,71 @@
             </div>
 
             <div class="header">
-                <div class="div-menu">
+              <div class="div-menu">
+                        <div>
+                            <i class="menu" onclick="showMenu()">
+                                <hr class="hr2">
+                                <hr class="hr2">
+                                <hr class="hr2">
+                            </i>
+                        </div>
 
-                    <i class="menu" onclick="showMenu()">
-                        <hr class="hr2">
-                        <hr class="hr2">
-                        <hr class="hr2">
-                    </i>
-                </div>
-                <div class="final-glowbuttondiv-420">
-                    <div class="glowbuttondiv-420" id="navLinks">
+                    </div>
+                                       <div class="glowbuttondiv" id="navLinks">
                         <i class="close" onclick="hideMenu()">
                             <hr class="hr3">
                             <hr class="hr4">
                         </i>
 
-                     <div class="glowbuttondiv2-420">
-                            <a class="linkglowbutton" href="index.html" style="--clr:silver"><span class="spanglowbutton">প্রচ্ছদ</span><i class="iglowbutton"></i></a>
-                            <a class="linkglowbutton" style="--clr:skyblue"><span class="spanglowbutton">প্রশাসনিক</span><i class="iglowbutton"></i></a>
-                            <a class="linkglowbutton" href="#" style="--clr:lime"><span class="spanglowbutton">একাডেমিক</span><i class="iglowbutton"></i></a>
-                            <a class="linkglowbutton" style="--clr:rgb(0,205,205)"><span class="spanglowbutton">এডমিশন</span><i class="iglowbutton"></i></a>
-                            <a class="linkglowbutton" href="notice.html" style="--clr:tan"><span class="spanglowbutton">নোটিশ</span><i class="iglowbutton"></i></a>
-                            <a class="linkglowbutton" style="--clr:orange"><span class="spanglowbutton">ফলাফল</span><i class="iglowbutton"></i></a>
-                            <a class="linkglowbutton" href="contact.html" style="--clr:blue"><span class="spanglowbutton">যোগাযোগ</span><i class="iglowbutton"></i></a>
+                         <div class="glowbuttondiv-2">
+                            <a class="linkglowbutton" href="index.html" style="--clr:black"><span class="spanglowbutton">প্রচ্ছদ</span><i class="iglowbutton"></i></a>
+                          
+                          
+                          
+                          <a onclick="opacityproshasonik()"  class="linkglowbutton" style="--clr:rgb(0,255,255)"><span class="spanglowbutton">প্রশাসনিক</span><i class="iglowbutton"></i></a>
+                          
+                          
+                          
+                            <a class="linkglowbutton" href="#" style="--clr:rgb(0,0,255)"><span class="spanglowbutton">একাডেমিক</span><i class="iglowbutton"></i></a>
+                            
+                            
+                            
+                            <a onclick="opacityadmission()" class="linkglowbutton" style="--clr:rgb(255,0,0)"><span class="spanglowbutton">এডমিশন</span><i class="iglowbutton"></i></a>
+                            
+                            
+                            
+                            <a class="linkglowbutton" href="notice.html" style="--clr:rgb(120,0,255)"><span class="spanglowbutton">নোটিশ</span><i class="iglowbutton"></i></a>
+                            <a class="linkglowbutton" style="--clr:rgb(230,230,0)"><span class="spanglowbutton">ফলাফল</span><i class="iglowbutton"></i></a>
+                            <a class="linkglowbutton" href="contact.html" style="--clr:rgb(250,150,0)"><span class="spanglowbutton">যোগাযোগ</span><i class="iglowbutton"></i></a>
                         </div>
+                                                <div class="proshasonik-link-container-11" id="proshasonikBlink">
+                            <a style="--clr:#0085FF" class="proshasonik-link-1" href="porichalonaporishod.html">পরিচালনা&nbsp;পর্ষদ</a>
+                            <a style="--clr:#3FC700" class="proshasonik-link-1" href="porichalonaporishod.html">পরিচালনা&nbsp;পর্ষদ</a>
+                            <a style="--clr:#D0D100" class="proshasonik-link-1" href="porichalonaporishod.html">পরিচালনা&nbsp;পর্ষদ</a>
+                        </div>
+
+
+
+                        <div class="proshasonik-link-container-22" id="admissionBlink">
+                            <a style="--clr:#0085FF" class="proshasonik-link-1" href="porichalonaporishod.html">jdjsi&nbsp;lorem</a>
+                            <a style="--clr:#3FC700" class="proshasonik-link-1" href="porichalonaporishod.html">ipsum&nbsp;dolar</a>
+                            <a style="--clr:#D0D100" class="proshasonik-link-1" href="porichalonaporishod.html">lorem&nbsp;dolar</a>
+                        </div>
+
+
                     </div>
+                
+                </div>
+            
+                    </div>
+                    
+                    
+                    
+                    
                 </div>
 
 
-            </div>
+        
 
 
 
@@ -124,16 +158,31 @@
             </td>
             
 </tr>
-<tr>  <td class="td1-notice">
-         <a href="#"><li type="square">
+
+
+
+
+<tr> 
+
+   <td class="td1-notice">
+         <a href="#">
+             <li type="square">
                 ore m ipsumdjf jjejfht jrieiw ourut ufbcb djsriwi wiruf ujewj wid jjgrir iwi wiwi eurud ufhc bwbdj xisnw iruf yxywh wbeb rb>djj
-        </li></a>
-    </td>
-            <td>
+            </li>
+        </a>
+
+   </td>
+            
+
+    <td>
                 <a>ore m ipsumdjf jjejfht </a> 
-            </td>
+    </td>
             
 </tr>
+
+
+
+
 </tbody>
 
 
@@ -232,12 +281,30 @@
             var navLinks = document.getElementById("navLinks");
 
 
-            function showMenu() {
-                navLinks.style.right = "20px";
-            }
-            function hideMenu() {
-                navLinks.style.right = "-290px";
-            }
+        function showMenu() {
+            navLinks.style.right = "20px";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-300px";
+            proshasonikBlink.style.display= "none";
+            admissionBlink.style.display = "none";
+        }
+        
+        var admissionBlink = document.getElementById("admissionBlink");
+        var proshasonikBlink = document.getElementById("proshasonikBlink");
+    
+    
+        function opacityproshasonik() {
+            proshasonikBlink.style.display = "flex";
+            admissionBlink.style.display = "none";
+        }
+        
+        
+        function opacityadmission() {
+            admissionBlink.style.display = "flex";
+            proshasonikBlink.style.display = "none";
+
+        }
 
         </script>
     </body>

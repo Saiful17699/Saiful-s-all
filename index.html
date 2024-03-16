@@ -5,967 +5,11 @@
     <meta name="viewport" content="width=device-width">
     <title>PBCCHS</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-    <style>
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-
-        }
-
-        .linkglowbutton {
-            position: relative;
-            color: black;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 0.2cm;
-            letter-spacing: 0.001cm;
-            font-weight: 900;
-            padding: 3px 8px;
-            transition: 0.5s;
-            border: none;
-            font-family: serif;
-            margin-right: 2px;
-            height: 20px;
-            cursor: pointer;
-        }
-        .linkglowbutton:hover {
-            box-shadow: 0 0 15px var(--clr);
-            letter-spacing: 0.015cm;
-            color: var(--clr);
-            background: var(--clr);
-            border: none;
-        }
-        .linkglowbutton:before {
-            content: '';
-            position: absolute;
-            inset: 2px;
-            background: white;
-            border: none;
-        }
-        .spanglowbutton {
-            position: relative;
-            z-index: 1;
-        }
-        .iglowbutton {
-            position: absolute;
-            inset: 0;
-        }
-        .iglowbutton::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 80%;
-            width: 8px;
-            height: 2.2px;
-            background: black;
-            transition: 0.5s;
-            transform: translateX(-50%) skewX(325deg);
-        }
-        .linkglowbutton:hover .iglowbutton::before {
-            width: 15px;
-            left: 20%;
-        }
-        .iglowbutton::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 20%;
-            width: 8px;
-            height: 2.5px;
-            background: black;
-            transition: 0.5s;
-            transform: translateX(-50%) skewX(325deg);
-        }
-        .linkglowbutton:hover .iglowbutton::after {
-            width: 15px;
-            left: 80%;
-        }
-
-
-        .fi2firstbanner {
-            width: 100%;
-            margin-bottom: 10px;
-            margin-top: 80px;
-
-        }
-
-        .home-background {
-            display: flex;
-            width: 100%;
-            height: 450px;
-            position: center;
-            object-fit: cover;
-            bottom: 0;
-
-        }
-
-        .div-of-home-page-photos-and-banner {
-            margin-left: 2%;
-            margin-right: 3%;
-        }
-
-        .home-container-of-banner-button-header {
-            margin-bottom: 1px;
-        }
-        .div-of-home-text1,
-        .div-of-home-text2,
-        .div-of-home-text3, {
-            margin-top: 5px;
-            align-items: center;
-            justify-content: center;
-            display: flex;
-            flex: 1;
-
-        }
-
-        .image-home-1,
-        .image-home-2,
-        .image-home-3 {
-            margin-top: 5%;
-            width: 160px;
-
-
-            margin-bottom: 50px;
-        }
-        .home-all-history {
-            display: flex;
-            margin-top: 3px;
-            background: tan;
-            margin-left: 2%;
-            margin-right: 3%;
-            padding: 2%;
-
-        }
-
-        .para {
-            color: white;
-            font-size: 15px;
-            text-align: center;
-            display: flex;
-            background: crimson;
-            margin-top: 2%;
-            margin: 2%;
-            padding: 3%;
-            padding-bottom: 5%;
-            font-weight: 300;
-            border-radius: 30px;
-
-        }
-@media (max-width:700px) {
-            body {
-                background: white;
-                height: 2000px;
-                width: 500px;
-
-            }
-            .div-of-home-chart-2-second {
-                margin-top: 5%;
-                margin-bottom: 5%;
-                background: black;
-                margin-left: 2%;
-                margin-right: 2%;
-                align-items: center;
-                justify-content: center;
-                height: 270px;
-                width: 450px;
-
-
-            }
-            .shovapoti-speech {
-                font-size: 18px;
-            }
-            .close {
-                flex-direction: column;
-                padding: 10 10px;
-                display: flex;
-                width: 70px;
-                height: 70px;
-                background: lightblue;
-                justify-content: center;
-                transform: translateY(-160px) translateX(20px);
-                border-radius: 50px;
-
-            }
-            .hr3 , .hr4 {
-                border: none;
-                padding-top: 2px;
-                background: black;
-                color: black;
-                display: flex;
-            }
-            .hr3 {
-                transform: rotate(135deg);
-            }
-            .hr4 {
-                transform: rotate(45deg);
-                margin-top: -1px;
-            }
-            .menu {
-                height: 70px;
-                width: 70px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                transform: translateY(0) translateX(390px);
-                border: 2px solid blue;
-                background: blue;
-                border-radius: 35px;
-                margin-bottom: 8px;
-                padding: 8px;
-                color: white;
-            }
-            .last-para {
-                text-align: center;
-                font-size: 15px;
-            }
-            .div-of-home-chart-2-second-2 {
-                margin-top: 5%;
-                margin-bottom: 5%;
-                background: skyblue;
-                margin-left: 2%;
-                margin-right: 3%;
-                align-items: center;
-                justify-content: center;
-                flex: 1;
-                display: block;
-                border-radius: 20px;
-                background: lime;
-            }
-            .div-of-home-chart-2-second-2-420 {
-                margin-top: 5%;
-                margin-bottom: 5%;
-                background: skyblue;
-                margin-left: 2%;
-                margin-right: 3%;
-                align-items: center;
-                justify-content: center;
-                flex: 1;
-                display: block;
-                border-radius: 20px;
-                background: lime;
-            }
-            .shovapoti-div {
-                margin-top: 5%;
-                margin-bottom: 5%;
-                background: skyblue;
-                margin-left: 2%;
-                margin-right: 3%;
-                align-items: center;
-                justify-content: center;
-                display: block;
-                border-radius: 20px;
-                background: lime;
-                padding-top: 5%;
-            }
-            .div-of-home-chart-1 , .div-of-home-chart-2,
-            .div-of-home-chart-3 , .div-of-home-chart-4 {
-
-                margin-top: 5%;
-                margin-bottom: 5%;
-                background: skyblue;
-                margin-left: 4%;
-                margin-right: 4%;
-                align-items: center;
-                justify-content: center;
-
-
-            }
-
-            .hr {
-                background: chocolate;
-                padding-top: 10px;
-                border: none;
-
-            }
-            .last-div {
-                display: block;
-                padding-top: 10%;
-                padding-bottom: 10%;
-            }
-
-            .li-of-charts {
-                margin-left: 25%;
-            }
-            .li-of-charts-second {
-                margin-left: 5%;
-
-            }
-
-            .div-of-home-chart {
-                display: block;
-                padding-top: 10%;
-                padding-bottom: 10%;
-            }
-
-            .home-all-history {
-                display: block;
-                margin: default;
-                padding-bottom: 50px;
-            }
-            .paralink1 {
-                font-size: 20px;
-                text-align: center;
-                display: flex;
-                background: chocolate;
-                margin: 5%;
-                margin-left: 5%;
-                padding-left: 17%;
-                padding-right: 14%;
-                padding-top: 1%;
-                padding-bottom: 1%;
-                font-weight: 800;
-                margin-top: -3%;
-                text-decoration: none;
-                margin-bottom: 1%;
-            }
-            .image-home-1,
-            .image-home-2,
-            .image-home-3 {
-                margin-top: 5%;
-                width: 150px;
-
-
-                margin-bottom: -2%;
-            }
-            .div-of-home-text1 {
-                margin-top: 55px;
-            }
-            .linkglowbutton {
-                position: relative;
-                color: black;
-                text-decoration: none;
-                text-transform: uppercase;
-                font-size: 0.4cm;
-                letter-spacing: 0.001cm;
-                font-weight: bold;
-                padding: 3px 8px;
-                transition: 0.5s;
-                border: none;
-                font-family: serif;
-                margin-right: 110px;
-                height: 30px;
-                display: flex;
-                margin-bottom: 15px;
-                margin-left: 20px;
-                text-align: center;
-            }
-
-            .glowbuttondiv {
-
-                padding-top: 170px;
-                position: fixed;
-                height: 500px;
-                width: 220px;
-                border-radius: 10px;
-                margin-right: 6px;
-                z-index: 1;
-
-                background: orange;
-                margin-top: -4px;
-                right: -290px;
-                transition: 1s;
-            }
-            .glowbuttondiv-420 {
-
-
-                padding-top: 170px;
-                position: fixed;
-                height: 500px;
-                width: 220px;
-                border-radius: 10px;
-                margin-right: 6px;
-                z-index: 1;
-
-                background: orange;
-                margin-top: -4px;
-                right: -290px;
-                transition: 1s;
-            }
-            .glowbuttondiv2 {
-                transform: translateY(-100px);
-            }
-        
-            .para-chart-1-second {
-
-                font-size: 20px;
-                font-family: Arial;
-                font-weight: 800;
-                color: #fff;
-                margin-bottom: 20px;
-                padding-top: 10px;
-                padding-bottom: 10px;
-                border-radius: 70px;
-                margin-right: 9%;
-                margin-left: 9%;
-                background: tan;
-                transform: translateY(20%);
-                text-align: center;
-            }
-            .anchor-of-li-chart-1-second {
-                font-size: 13px;
-                text-decoration: none;
-                text-align: center;
-                color: blue;
-                font-weight: 750;
-                margin-left: -10px;
-                font-family: Arial;
-            }
-            .div-para-address , .div-para-email , .div-para-telephone {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                padding: 20px;
-                flex: 1;
-                margin: 10px;
-                background: lime;
-                height: 200px;
-
-            }
-
-
-
-        }
-@media (min-width:701px) {
-            .shovapoti-speech {
-                font-size: 10px;
-            }
-            .div-menu {
-                display: none;
-            }
-            .close {
-                display: none;
-            }
-            .menu {
-                display: none;
-
-            }
-            .linkglowbutton {
-                position: relative;
-                color: black;
-                text-decoration: none;
-                text-transform: uppercase;
-                font-size: 0.4cm;
-                letter-spacing: 0.001cm;
-                font-weight: 900;
-                padding: 5px 10px;
-                transition: 0.5s;
-                border: none;
-                font-family: serif;
-                margin-right: 2px;
-                height: 2.5vh;
-            }
-            .hr2 {
-                display: none;
-            }
-            .hr {
-
-                background: tansparent;
-                padding-top: 0px;
-                border: none;
-            }
-            body {
-                background: white;
-                height: 2000px;
-                width: 1000px;
-                margin-left: 5px;
-            }
-
-            .anchor-of-li-chart-1-second {
-                font-size: 13px;
-                text-decoration: none;
-                text-align: center;
-                color: blue;
-                font-weight: 750;
-                font-family: Arial;
-
-            }
-            .last-para {
-                text-align: center;
-                font-size: 7px;
-            }
-            .para-chart-1-second {
-
-                font-family: Arial;
-                font-size: 25px;
-                font-weight: 700;
-                color: #fff;
-                margin-bottom: 20px;
-                padding-top: 10px;
-                padding-bottom: 10px;
-                border-radius: 70px;
-                margin-right: 9%;
-                margin-left: 9%;
-                background: tan;
-                transform: translateY(20%);
-                text-align: center;
-            }
-            .div-of-home-chart-1 , .div-of-home-chart-2,
-            .div-of-home-chart-3 , .div-of-home-chart-4 {
-                margin-top: 5%;
-                margin-bottom: 5%;
-                background: skyblue;
-                margin-left: 1%;
-                margin-right: 1%;
-                align-items: center;
-                justify-content: center;
-                flex: 1;
-
-            }
-            .li-of-charts {
-                margin-left: 10%;
-
-            }
-            .div-of-home-chart-2-second {
-                margin-top: 5%;
-                margin-bottom: 5%;
-                background: black;
-                margin-left: 2%;
-                margin-right: 2%;
-                align-items: center;
-                justify-content: center;
-                height: 270px;
-                width: 800px;
-
-
-            }
-            .div-of-home-chart-2-second-2 {
-                margin-top: 5%;
-                margin-bottom: 5%;
-                background: skyblue;
-                margin-left: 2%;
-                margin-right: 2%;
-                align-items: center;
-                justify-content: center;
-                height: 270px;
-                display: flex;
-                flex-direction: column;
-                border-radius: 20px;
-                background: lime;
-            }
-            .div-of-home-chart-2-second-2-420 {
-                margin-top: 5%;
-                margin-bottom: 5%;
-                background: skyblue;
-                margin-left: 2%;
-                margin-right: 2%;
-                align-items: center;
-                justify-content: center;
-                height: 250px;
-                width: 950px;
-                display: flex;
-                flex-direction: row;
-            }
-
-            .last-para {
-                font-size: 15px;
-                text-align: center;
-            }
-            .last-div {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                padding-right: 50px;
-                padding-left: 50px;
-
-            }
-
-
-            .div-of-home-chart-second {
-                display: flex;
-
-            }
-            .li-of-charts-second {
-                margin-left: 5%;
-            }
-            .div-of-home-chart {
-                display: flex;
-
-            }
-            .paralink1 {
-                font-size: 20px;
-                text-align: center;
-                display: flex;
-                background: chocolate;
-                margin: 5%;
-                margin-left: 5%;
-                padding-left: 14%;
-                padding-right: 14%;
-                padding-top: -2%;
-                padding-bottom: -2%;
-                font-weight: 800;
-                margin-top: -3%;
-                text-decoration: none;
-                margin-bottom: 3%;
-            }
-            .image-home-1,
-            .image-home-2,
-            .image-home-3 {
-
-                width: 160px;
-
-                height: 180px;
-                margin-bottom: -2%;
-            }
-            .glowbuttondiv {
-
-                text-align: right;
-
-                display: inline-block;
-                width: 90%;
-                transform: translateY(50px);
-
-
-            }
-            .glowbuttondiv-420 {
-                justify-content: center;
-                align-items: center;
-                text-align: right;
-                background: tan;
-                display: flex;
-                height: 50px;
-                width: 100%;
-                transform: translateY(1px);
-            }
-            .final-glowbuttondiv-420 {
-                width: 100%;
-                display: flex;
-                margin-bottom: 20px;
-
-
-            }
-
-
-
-            .news-ticker-home-page .breaking-news {
-                position: absolute;
-                background: green;
-                height: 100%;
-                display: flex;
-                align-items: center;
-                padding: 0 4px;
-                color: white;
-                font-size: 2px;
-                font-weight: bold;
-                z-index: 3;
-                width: 10%;
-                text-decoration: none;
-            }
-            .div-para-address {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                padding: 2px;
-                transform: translateY(-30px);
-                margin: 2px;
-                background: lime;
-                height: 100px;
-
-            }
-            .div-para-email , .div-para-telephone {
-
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                padding: 2px;
-
-                margin: 10px;
-                background: lime;
-                height: 50px;
-
-            }
-
-        }
-
-
-
-
-
-
-
-        .paralink-header {
-            font-size: 20px;
-            text-align: center;
-            display: flex;
-            color: rgb(255,255,0);
-            background: linear-gradient(black , rgba(0,0,0,0.5));
-            margin: 5%;
-            margin-left: 5%;
-            padding-left: 12%;
-            padding-right: 12%;
-            padding-top: 2%;
-            padding-bottom: 2%;
-            font-weight: 800;
-            margin-top: 5%;
-            margin-bottom: -5%;
-            text-decoration: none;
-        }
-        .news-ticker-home-page {
-            position: fixed;
-
-            font-family: Roboto ,Sans-Serif;
-            box-shadow: 0 4px 8px -4px rgba(0, 0, 0 ,1.0);
-            text-decoration: none;
-            width: 100%;
-            top: 0;
-            left: 0;
-            margin-left: 0%;
-            margin-top: 2%;
-            margin-right: 5%;
-            overflow: hidden;
-            background: white;
-        }
-        .news-ticker-home-page .breaking-news {
-            position: absolute;
-            background: brown;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            padding: 0 4px;
-            color: white;
-            font-size: 2px;
-            font-weight: bold;
-            z-index: 3;
-            width: 100px;
-            text-decoration: none;
-
-        }
-        .news-ticker-home-page ul {
-            display: flex;
-            list-style: none;
-            margin: 0;
-            animation: scroll 14s infinite linear;
-            text-decoration: none;
-        }
-        .news-ticker-home-page ul li {
-            white-space: nowrap;
-            padding: 15px 30px;
-            color: blue;
-            position: relative;
-            text-decoration: none;
-        }
-        .news-ticker-home-page ul li::after {
-            width: 1px;
-            height: 100%;
-            background: black;
-            top: 0;
-            right: 0;
-            text-decoration: none;
-        }
-        .news-ticker-home-page ul li:last-child::after {
-            display: none;
-            text-decoration: none;
-        }
-@keyframes scroll {
-            from {
-                transform: translateX(100%);
-            }
-            to {
-                transform: translateX(-100%);
-            }
-        }
-        .ul-of-all-newses {
-            text-decoration: none;
-        }
-        .para-breaking {
-            margin-right: 20px;
-            margin-left: 10px;
-            font-size: 15px;
-            margin-bottom: 10px;
-
-        }
-        .para-news {
-            margin-top: 20px;
-            margin-left: -45px;
-            font-size: 15px;
-
-        }
-        .link-news-breaking {
-            text-decoration: none;
-            color: black;
-        }
-
-
-        .div-of-home-chart-1 , .div-of-home-chart-2,
-        .div-of-home-chart-3 , .div-of-home-chart-4 {
-            margin-top: 5%;
-            margin-bottom: 5%;
-            background: lime;
-            align-items: center;
-            justify-content: center;
-            height: 200px;
-            border-radius: 20px;
-
-        }
-
-        .div-of-home-chart-1-second,.div-of-home-chart-2-second,.div-of-home-chart-3-second {
-            margin-top: 5%;
-            margin-bottom: 5%;
-            background: lime;
-            align-items: center;
-            justify-content: center;
-
-            border-radius: 20px;
-
-        }
-        .div-of-home-chart {
-
-            background: rgb(255,255,184,0.4);
-            margin-left: 2%;
-            margin-right: 3%;
-
-        }
-        .para-chart-1 {
-            font-size: 20px;
-            font-weight: 800;
-            color: #fff;
-            margin-bottom: 20px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            border-radius: 70px;
-            margin-right: 10%;
-            margin-left: 10%;
-            background: tan;
-            transform: translateY(20%);
-            text-align: center;
-            z-index: -2;
-        }
-
-        .anchor-of-li-chart-1 {
-            font-size: 20px;
-            text-decoration: none;
-            text-align: center;
-            color: blue;
-            font-weight: 750;
-        }
-
-
-        .div-of-home-chart-second {
-
-            background: rgb(255,255,184,0.4);
-            margin-left: 2%;
-            margin-right: 3%;
-            margin-bottom: 30px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-
-        }
-
-        .div-of-home-chart-2-second-charts {
-            display: flex;
-            flex-direction: row;
-        }
-
-        .last-div {
-
-            background: rgb(255,255,184,0.4);
-            margin-left: 2%;
-            margin-right: 3%;
-            margin-bottom: 30px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-
-        }
-
-        .hr2 {
-            color: black;
-            background: white;
-            padding: 3px;
-            border: none;
-            margin: 5px;
-            border-radius: 3px;
-        }
-        .div-of-home-chart-2-second-b , .div-of-home-chart-2-second-c {
-            width: 120px;
-        }
-        .div-of-home-chart-2-second-a {
-            width: 150px;
-        }
-        .google , .facebook , .youtube ,.address-icon ,.email-icon ,.telephone-icon {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-        }
-
-        .last-h3 {
-            text-align: center;
-        }
-
-
-
-        .address-h2 , .telephone-h2 , .email-h2 {
-            text-align: center;
-        }
-        .address-para , .telephone-para , .email-para {
-            text-align: center;
-            font-weight: bold;
-        }
-        .div-menu {
-            padding-top: 5px;
-            padding-bottom: 5px;
-            width: 100%;
-            background: deepskyblue;
-            margin-bottom: 10px;
-        }
-
-        .shovapoti-hr1 {
-            display: flex;
-            width: 80%;
-            background: black;
-            border: 3px solid black;
-
-        }
-        .shovapoti-div {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        .shovapoti-para {
-            text-align: center;
-        }
-        .shovapoti-img {
-            width: 200px;
-            height: 240px;
-        }
-        .shovapoti-img-div {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .shovapoti-speech-div {
-
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 5%;
-
-        }
-
-        .telephone-email-div {
-            display: flex;
-            flex-direction: row;
-            transform: translateY(1px);
-        }
-        .home-all-history-img {
-            display: flex;
-            width: 100%;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-        }
-
-    </style>
-
+    <link rel="stylesheet" href="home.css" type="text/css" media="all">
 </head>
+<style type="text/css" media="all">
 
+</style>
 <body>
 
 
@@ -992,16 +36,21 @@
                         <li class="li-of-charts-news"><a class="link-news-breaking" href="https/www.youtube.com">helo hello halsjdj</a></li>
                     </ul>
 
+
+
+
                 </div>
 
                 <div class="header">
                     <div class="div-menu">
+                        <div>
+                            <i class="menu" onclick="showMenu()">
+                                <hr class="hr2">
+                                <hr class="hr2">
+                                <hr class="hr2">
+                            </i>
+                        </div>
 
-                        <i class="menu" onclick="showMenu()">
-                            <hr class="hr2">
-                            <hr class="hr2">
-                            <hr class="hr2">
-                        </i>
                     </div>
                     <div class="glowbuttondiv" id="navLinks">
                         <i class="close" onclick="hideMenu()">
@@ -1009,344 +58,336 @@
                             <hr class="hr4">
                         </i>
 
-                        <div class="glowbuttondiv2">
-                            <a class="linkglowbutton" href="index.html" style="--clr:silver"><span class="spanglowbutton">প্রচ্ছদ</span><i class="iglowbutton"></i></a>
-                            <a class="linkglowbutton" style="--clr:skyblue"><span class="spanglowbutton">প্রশাসনিক</span><i class="iglowbutton"></i></a>
-                            <a class="linkglowbutton" href="#" style="--clr:lime"><span class="spanglowbutton">একাডেমিক</span><i class="iglowbutton"></i></a>
-                            <a class="linkglowbutton" style="--clr:rgb(0,205,205)"><span class="spanglowbutton">এডমিশন</span><i class="iglowbutton"></i></a>
-                            <a class="linkglowbutton" href="notice.html" style="--clr:tan"><span class="spanglowbutton">নোটিশ</span><i class="iglowbutton"></i></a>
-                            <a class="linkglowbutton" style="--clr:orange"><span class="spanglowbutton">ফলাফল</span><i class="iglowbutton"></i></a>
-                            <a class="linkglowbutton" href="contact.html" style="--clr:blue"><span class="spanglowbutton">যোগাযোগ</span><i class="iglowbutton"></i></a>
+                        <div class="glowbuttondiv-2">
+                            <a class="linkglowbutton" href="index.html" style="--clr:black"><span class="spanglowbutton">প্রচ্ছদ</span><i class="iglowbutton"></i></a>
+
+
+
+                            <a onclick="opacityproshasonik()" class="linkglowbutton" style="--clr:rgb(0,255,255)"><span class="spanglowbutton">প্রশাসনিক</span><i class="iglowbutton"></i></a>
+
+
+
+                            <a class="linkglowbutton" href=" academic.html" style="--clr:rgb(0,0,255)"><span class="spanglowbutton">একাডেমিক</span><i class="iglowbutton"></i></a>
+
+
+
+                            <a onclick="opacityadmission()" class="linkglowbutton" style="--clr:rgb(255,0,0)"><span class="spanglowbutton">এডমিশন</span><i class="iglowbutton"></i></a>
+
+
+
+                            <a class="linkglowbutton" href="notice.html" style="--clr:rgb(120,0,255)"><span class="spanglowbutton">নোটিশ</span><i class="iglowbutton"></i></a>
+                            <a href="https://eduonlineresult.com/" class="linkglowbutton" style="--clr:rgb(230,230,0)"><span class="spanglowbutton">ফলাফল</span><i class="iglowbutton"></i></a>
+                            <a class="linkglowbutton" href="contact.html" style="--clr:rgb(250,150,0)"><span class="spanglowbutton">যোগাযোগ</span><i class="iglowbutton"></i></a>
                         </div>
+
+
+
+                        <div class="proshasonik-link-container-11" id="proshasonikBlink">
+                            <a style="--clr:#0085FF" class="proshasonik-link-1" href="porichalonaporishod.html">পরিচালনা&nbsp;পর্ষদ</a>
+                            <a style="--clr:#3FC700" class="proshasonik-link-1" href="porichalonaporishod.html">শিক্ষকবৃন্দ</a>
+                            <a style="--clr:#D0D100" class="proshasonik-link-1" href="porichalonaporishod.html">কর্মচারীবৃন্দ</a>
+                        </div>
+
+
+
+                        <div class="proshasonik-link-container-22" id="admissionBlink">
+                            <a style="--clr:#0085FF" class="proshasonik-link-1" href="porichalonaporishod.html">সাধারণ&nbsp;তথ্য</a>
+                            <a style="--clr:#3FC700" class="proshasonik-link-1" href="porichalonaporishod.html">অনলাইন&nbsp;আবেদন</a>
+                        </div>
+
+
+
                     </div>
                     <img class="home-background" src="logo.jpg" onclick="hideMenu()">
                 </div>
+
+
+
+
             </div>
+            <div class="home-all-history" onclick="hideMenu()">
+
+                <div class="div-of-home-text1">
+
+                    <p class="paralink-header">
+                        প্রতিষ্ঠানের&nbsp;ইতিহাস
+                    </p>
+                    <div class="home-all-history-img">
+
+                        <img class="image-home-1" src="schoollogo.jpg">
+                    </div>
+                    <p class="para">
+
+                        শিক্ষার&nbsp; দিক বিবেচনা করে চট্টগ্রাম মহানগরীর  ১৮নং  ওয়ার্ড, পূর্ব বাকলিয়া  এলাকার গণ্যমান্য ব্যক্তিবর্গ  এবং সাবেক মৎস্য ও পশুসম্পদ&nbsp; মন্ত্রী  জনাব আলহাজ্ব&nbsp; আব্দুল্লাহ-আল-নোমান সহ ১৭/০১/২০০৩ইং&nbsp; সালে অত্র বিদ্যালয়টি মধ্যম বাকলিয়া উচ্চ বিদ্যালয় নামে প্রতিষ্ঠা করেন। যেহেতু বিদ্যালয়টি মধ্যম বাকলিয়া&nbsp; এলাকায়&nbsp; অবস্থিত নয়&nbsp; সেহেতু&nbsp; বিদ্যালয়ের নাম পরিবর্তন&nbsp; করার জন্য&nbsp; গত&nbsp; ০৯/০১/২০০৫ইং&nbsp; এলাকার ৫০(পঞ্চাশ) জন মানুষের
+
+                    </p>
 
 
 
-        </div>
-        <div class="home-all-history" onclick="hideMenu()">
-
-            <div class="div-of-home-text1">
-
-                <p class="paralink-header">
-                    প্রতিষ্ঠানের&nbsp;ইতিহাস
-                </p>
-                <div class="home-all-history-img">
-
-                    <img class="image-home-1" src="schoollogo.jpg">
-                </div>
-                <p class="para">
-
-                    শিক্ষার দিক বিবেচনা করে চট্টগ্রাম মহানগরীর  ১৮নং  ওয়ার্ড, পূর্ব বাকলিয়া  এলাকার গণ্যমান্য ব্যক্তিবর্গ  এবং সাবেক মৎস্য ও পশুসম্পদ মন্ত্রী  জনাব আলহাজ্ব আব্দুল্লাহ-আল-নোমান সহ ১৭/০১/২০০৩ইং সালে অত্র বিদ্যালয়টি মধ্যম বাকলিয়া উচ্চ বিদ্যালয় নামে প্রতিষ্ঠা করেন। যেহেতু বিদ্যালয়টি মধ্যম বাকলিয়া এলাকায় অবস্থিত নয় সেহেতু বিদ্যালয়ের নাম পরিবর্তন করার জন্য গত ০৯/০১/২০০৫ইং এলাকার ৫০(পঞ্চাশ) জন মানুষের
-
-                </p>
-
-
-
-                <a class="paralink1" href="pppbiddaloyeritihash.html"><p class="paralink1">
-                    [আরো&nbsp;পড়ুন]
-                </p>
-                </a>
-            </div>
-
-            <div class="div-of-home-text2">
-                <p class="paralink-header">
-                    সভাপতি&nbsp;
-                </p>
-                <div class="home-all-history-img">
-                    <img class="image-home-2" src="meyor.jpg">
-                </div>
-                <p class="para">
-
-                    বন্দর নগরী চট্টগ্রামের প্রাণকেন্দ্রে প্রতিষ্ঠিত পূর্ব বাকলিয়া সিটি কর্পোরেশন উচ্চ বিদ্যালয় প্রতিষ্ঠালগ্ন হতেই শিক্ষাক্ষেত্রে গুরুত্বপূর্ণ অবদান রেখে চলেছে। উন্নত জাতি গঠনের লক্ষ্যে এই প্রতিষ্ঠান শিক্ষার্থীদের মেধা ও মননের বিকাশে বিভিন্ন সহশিক্ষা কার্যক্রম সাফল্যের সাথে পরিচালনা করছে। প্রতিষ্ঠানকে আধুনিক ও যুগোপযোগীকরণের লক্ষ্যে বর্তমানে ওয়েবসাইটের মাধ্যমে বিভিন্ন সেবা প্রদান কার্যক্রম চলমান রয়েছে।
-
-                </p>
-
-
-
-
-                <a class="paralink1" href="pppshovapoti.html"><p class="paralink1">
-                    [আরো&nbsp;পড়ুন]
-                </p>
-                </a>
-            </div>
-            <div class="div-of-home-text3">
-                <p class="paralink-header">
-                    প্রধান&nbsp;শিক্ষক
-                </p>
-                <div class="home-all-history-img">
-                    <img class="image-home-3" src="schoollogo.png.jpg">
-                </div>
-                <p class="para">
-
-                    অনাবিল প্রাকৃতিক সৌন্দর্যের লীলাভূমি চট্টগ্রাম মহানগরীর প্রাণকেন্দ্রে অবস্থিত শিক্ষা প্রতিষ্ঠান পূর্ব বাকলিয়া সিটি কর্পোরেশন উচ্চ বিদ্যালয়। ২০০৩ সালে স্থাপিত এই বিদ্যালয় শিক্ষার্থীদের মেধা ও মননকে লালন ও শাণিত করার মাধ্যমে দেশের যোগ্য ভবিষ্যৎ নাগরিক গড়ে তোলার ক্ষেত্রে বরাবরই উল্লেখযোগ্য ভূমিকা পালন করে আসছে। শিক্ষা মানবসম্পদ ও জাতীয় উন্নয়নের মূল হাতিয়ার। পূর্ব বাকলিয়া সিটি কর্পোরেশন উচ্চ
-                </p>
-
-
-
-                <a class="paralink1" href="pppprodhanshikkhok.html"><p class="paralink1">
-                    [আরো&nbsp;পড়ুন]
-                </p>
-                </a>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="div-of-home-chart" onclick="hideMenu()">
-
-        <div class="div-of-home-chart-1">
-            <p class="para-chart-1">
-                শিক্ষার্থীর&nbsp;তথ্য
-            </p>
-
-            <li class="li-of-charts"><a class="anchor-of-li-chart-1" href="zsyllabus.html">সিলেবাস</a></li>
-            <li class="li-of-charts"><a href="zclassroutine.html" class="anchor-of-li-chart-1">ক্লাস&nbsp;রুটিন</a></li>
-
-
-
-        </div>
-        <div class="div-of-home-chart-2">
-            <p class="para-chart-1">
-                শিক্ষকদের&nbsp;তথ্য
-            </p>
-
-            <li class="li-of-charts"><a href="zshikkhok.html" class="anchor-of-li-chart-1">শিক্ষকবৃন্দ</a></li>
-
-            <li class="li-of-charts"><a href="zonapottisonod.html" class="anchor-of-li-chart-1">অনাপত্তি&nbsp;সনদ</a></li>
-            <li class="li-of-charts"><a href="zsunnotalika.html" class="anchor-of-li-chart-1">শূন্য&nbsp;তালিকা</a>
-            </li>
-
-        </div>
-
-        <div class="div-of-home-chart-3">
-            <p class="para-chart-1">
-                ডাউনলোড
-            </p>
-
-            <li class="li-of-charts"><a class="anchor-of-li-chart-1" href="zuniqueid.html">ইউনিক&nbsp;আইডি&nbsp;ফর্ম</a></li>
-
-
-
-        </div>
-        <div class="div-of-home-chart-4">
-            <p class="para-chart-1">
-                একাডেমিক&nbsp;তথ্য
-            </p>
-
-            <li class="li-of-charts">
-                <a href="zeeebook.html" class="anchor-of-li-chart-1"> ই-বুক</a>
-            </li>
-            <li class="li-of-charts"><a href="zcomputerlab.html" class="anchor-of-li-chart-1">কম্পিউটার&nbsp;ল্যাব</a></li>
-            <li class="li-of-charts"><a href="zclassroutine.html" class="anchor-of-li-chart-1">ক্লাস&nbsp;রুটিন</a>
-            </li>
-            <li class="li-of-charts"><a href="zsyllabus.html" class="anchor-of-li-chart-1">সিলেবাস</a>
-            </li>
-
-        </div>
-
-    </div>
-
-
-
-
-    <div class="div-of-home-chart-second" onclick="hideMenu()">
-
-
-        <div class="div-of-home-chart-2-second">
-            <p class="para-chart-1-second">
-                DEPARTMENT&nbsp;LINK
-            </p>
-            <div class="div-of-home-chart-2-second-charts">
-
-
-                <div class="div-of-home-chart-2-second-a">
-
-
-                    <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
-                        এসএসসি&nbsp;ফলাফল
-                    </a></li>
-
-                    <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
-                        শিক্ষক&nbsp;বাতায়ন
-                    </a></li>
-                    <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
-                        মুক্তপাঠ</a></li>
-                    <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
-                        ইএমএস
-                    </a></li>
-
-
-                    <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second">ব্যানবেইস</a></li>
-
-                    <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second">চট্টগ্রাম&nbsp;শিক্ষাবোর্ড</a></li>
-                    <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second">ঢাকা&nbsp;শিক্ষাবোর্ড</a>
-                    </li>
-                    <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second">
-                        মাউশি
+                    <a class="paralink1" href="pppbiddaloyeritihash.html"><p class="paralink1">
+                        [আরো&nbsp;পড়ুন]
+                    </p>
                     </a>
-                    </li>
-
-
-
-
-
                 </div>
 
+                <div class="div-of-home-text2">
+                    <p class="paralink-header">
+                        সভাপতি&nbsp;
+                    </p>
+                    <div class="home-all-history-img">
+                        <img class="image-home-2" src="meyor.jpg">
+                    </div>
+                    <p class="para">
+
+                        বন্দর &nbsp;নগরী চট্টগ্রামের&nbsp; প্রাণকেন্দ্রে&nbsp; প্রতিষ্ঠিত&nbsp; পূর্ব&nbsp; বাকলিয়া সিটি কর্পোরেশন উচ্চ বিদ্যালয় প্রতিষ্ঠালগ্ন হতেই শিক্ষাক্ষেত্রে গুরুত্বপূর্ণ&nbsp; অবদান&nbsp; রেখে চলেছে। উন্নত জাতি গঠনের লক্ষ্যে এই&nbsp; প্রতিষ্ঠান&nbsp; শিক্ষার্থীদের মেধা ও&nbsp; মননের&nbsp; বিকাশে&nbsp; বিভিন্ন সহশিক্ষা&nbsp; কার্যক্রম&nbsp;&nbsp; সাফল্যের&nbsp;&nbsp; সাথে&nbsp;&nbsp; পরিচালনা&nbsp; করছে। প্রতিষ্ঠানকে আধুনিক ও যুগোপযোগীকরণের লক্ষ্যে বর্তমানে ওয়েবসাইটের মাধ্যমে বিভিন্ন সেবা প্রদান কার্যক্রম চলমান রয়েছে।
+
+                    </p>
 
 
 
 
-
-                <div class="div-of-home-chart-2-second-b">
-
-
-
-                    <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
-                        NCTB
-                    </a></li>
-                    <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
-                        E-BOOK
-                    </a></li>
-                    <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
-                        ইএমএস
-                    </a></li>
-                    <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
-                        ইএমএস
-                    </a></li>
-                    <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
-                        ইএমএস
-                    </a></li>
-                    <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
-                        ইএমএস
-                    </a></li>
-                    <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
-                        ইএমএস
-                    </a></li>
-                    <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
-                        ইএমএস
-                    </a></li>
-
-
-
-
+                    <a class="paralink1" href="pppshovapoti.html"><p class="paralink1">
+                        [আরো&nbsp;পড়ুন]
+                    </p>
+                    </a>
                 </div>
-                <div class="div-of-home-chart-2-second-c">
+                <div class="div-of-home-text3">
+                    <p class="paralink-header">
+                        প্রধান&nbsp;শিক্ষক
+                    </p>
+                    <div class="home-all-history-img">
+                        <img class="image-home-3" src="schoollogo.png.jpg">
+                    </div>
+                    <p class="para">
 
-                    <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
-                        ইএমএস
-                    </a></li>
-                    <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
-                        ইএমএস
-                    </a></li>
-                    <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
-                        ইএমএস
-                    </a></li>
-                    <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
-                        ইএমএস
-                    </a></li>
-
-                    <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
-                        ইএমএস
-                    </a></li>
-                    <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
-                        ইএমএস
-                    </a></li>
-                    <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
-                        ইএমএস
-                    </a></li>
-                    <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
-                        ইএমএস
-                    </a></li>
+                        অনাবিল প্রাকৃতিক সৌন্দর্যের লীলাভূমি চট্টগ্রাম মহানগরীর প্রাণকেন্দ্রে&nbsp; অবস্থিত&nbsp; শিক্ষা&nbsp; প্রতিষ্ঠান&nbsp; পূর্ব&nbsp; বাকলিয়া&nbsp; সিটি&nbsp; কর্পোরেশন উচ্চ বিদ্যালয়। ২০০৩ সালে স্থাপিত এই বিদ্যালয় শিক্ষার্থীদের মেধা ও মননকে লালন ও শাণিত করার মাধ্যমে দেশের যোগ্য ভবিষ্যৎ নাগরিক গড়ে তোলার ক্ষেত্রে বরাবরই উল্লেখযোগ্য ভূমিকা পালন করে আসছে। শিক্ষা মানবসম্পদ ও জাতীয় উন্নয়নের মূল হাতিয়ার। পূর্ব বাকলিয়া সিটি কর্পোরেশন উচ্চ
+                    </p>
 
 
 
-
+                    <a class="paralink1" href="pppprodhanshikkhok.html"><p class="paralink1">
+                        [আরো&nbsp;পড়ুন]
+                    </p>
+                    </a>
                 </div>
-
 
             </div>
-
-
-
-
-
         </div>
 
+        <div class="div-of-home-chart" onclick="hideMenu()">
 
-
-
-
-        <div class="div-of-home-chart-2-second-2" onclick="hideMenu()">
-
-
-            <div class="div-para-address">
-
-                <img class="address-icon" src="address.jpg">
-                <h2 class="address-h2">ADDRESS</h2>
-                <p class="address-para">
-                    আব্দুল লতিফ হাট, ১৮নং ওয়ার্ড, পূর্ব বাকলিয়া, মিয়াখান রোড, বাকলিয়া, চট্টগ্রাম – ৪০০০, বাংলাদেশ।
+            <div class="div-of-home-chart-1">
+                <p class="para-chart-1">
+                    শিক্ষার্থীর&nbsp;তথ্য
                 </p>
+
+                <li class="li-of-charts"><a class="anchor-of-li-chart-1" href="zsyllabus.html">সিলেবাস</a></li>
+                <li class="li-of-charts"><a href="zclassroutine.html" class="anchor-of-li-chart-1">ক্লাস&nbsp;রুটিন</a></li>
+
+
+
             </div>
-            <div class="telephone-email-div">
+            <div class="div-of-home-chart-2">
+                <p class="para-chart-1">
+                    শিক্ষকদের&nbsp;তথ্য
+                </p>
 
+                <li class="li-of-charts"><a href="zshikkhok.html" class="anchor-of-li-chart-1">শিক্ষকবৃন্দ</a></li>
 
-                <div class="div-para-telephone">
-                    <img class="telephone-icon" src="address.jpg">
-                    <h2 class="telephone-h2">TELEPHONE</h2>
-                    <p class="telephone-para">
-                        ০১৩০৯–১৩১৩৮৫
-                    </p>
+                <li class="li-of-charts"><a href="zonapottisonod.html" class="anchor-of-li-chart-1">অনাপত্তি&nbsp;সনদ</a></li>
+                <li class="li-of-charts"><a href="zsunnotalika.html" class="anchor-of-li-chart-1">শূন্য&nbsp;তালিকা</a>
+                </li>
 
-                </div>
-
-
-
-                <div class="div-para-email">
-                    <img class="email-icon" src="envelope.jpg">
-                    <h2 class="email-h2">EMAIL</h2>
-                    <p class="email-para">
-                        hm@pbcchs.edu.bd
-                    </p>
-                </div>
             </div>
+
+            <div class="div-of-home-chart-3">
+                <p class="para-chart-1">
+                    ডাউনলোড
+                </p>
+
+                <li class="li-of-charts"><a class="anchor-of-li-chart-1" href="zuniqueid.html">ইউনিক&nbsp;আইডি&nbsp;ফর্ম</a></li>
+
+
+
+            </div>
+            <div class="div-of-home-chart-4">
+                <p class="para-chart-1">
+                    একাডেমিক&nbsp;তথ্য
+                </p>
+
+                <li class="li-of-charts">
+                    <a href="zeeebook.html" class="anchor-of-li-chart-1"> ই-বুক</a>
+                </li>
+                <li class="li-of-charts"><a href="zcomputerlab.html" class="anchor-of-li-chart-1">কম্পিউটার&nbsp;ল্যাব</a></li>
+                <li class="li-of-charts"><a href="zclassroutine.html" class="anchor-of-li-chart-1">ক্লাস&nbsp;রুটিন</a>
+                </li>
+                <li class="li-of-charts"><a href="zsyllabus.html" class="anchor-of-li-chart-1">সিলেবাস</a>
+                </li>
+
+            </div>
+
         </div>
 
 
 
 
+        <div class="div-of-home-chart-second" onclick="hideMenu()">
 
 
-    </div>
+            <div class="div-of-home-chart-2-second">
+                <p class="para-chart-1-second">
+                    DEPARTMENT&nbsp;LINK
+                </p>
+                <div class="div-of-home-chart-2-second-charts">
 
-    <div class="last-div">
 
-        <div class="last-line-1">
-            <p class="last-para">
-                এই&nbsp;ওয়েবসাইটের&nbsp;সকল&nbsp;স্বত্ব&nbsp;বিদ্যালয়&nbsp;কর্তৃক&nbsp;সংরক্ষিত
-            </p>
+                    <div class="div-of-home-chart-2-second-a">
+
+
+                        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.educationboardresults.gov.bd/">
+                            এসএসসি&nbsp;ফলাফল
+                        </a></li>
+
+                        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="https://teachers.gov.bd/">
+                            শিক্ষক&nbsp;বাতায়ন
+                        </a></li>
+                        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="https://muktopaath.gov.bd/">
+                            মুক্তপাঠ</a></li>
+                        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="https://ems.pbcchs.edu.bd/">
+                            ইএমএস
+                        </a></li>
+                        <li class="li-of-charts-second"><a href="https://banbeis.gov.bd/" class="anchor-of-li-chart-1-second">ব্যানবেইস</a></li>
+
+                        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="https://web.bise-ctg.gov.bd/bisectg">চট্টগ্রাম&nbsp;শিক্ষাবোর্ড</a></li>
+                        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="https://dhakaeducationboard.gov.bd/">ঢাকা&nbsp;শিক্ষাবোর্ড</a>
+                        </li>
+                        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="https://dshe.gov.bd/">
+                            মাউশি
+                        </a>
+                        </li>
+
+
+                       
+
+
+                    </div>
+
+                    <div class="div-of-home-chart-2-second-b">
+
+
+
+                        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
+                            NCTB
+                        </a></li>
+                        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
+                            E-BOOK
+                        </a></li>
+                        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
+                        কিশোর বাতায়ন    
+                            </a></li>
+                        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
+                            Ctg. City Corporation
+                        </a></li>
+                        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
+                            ইএমএস
+                        </a></li>
+                        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
+                            CITIZEN
+                        </a></li>
+                        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
+                            তথ্য বাতায়ন
+                        </a></li>
+                        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
+                            IMED
+                        </a></li>
+
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+
+
+
+            </div>
+
+                     
+
+
+
+            <div class="div-of-home-chart-2-second-2" onclick="hideMenu()">
+
+
+                <div class="div-para-address">
+
+                    <img class="address-icon" src="address.jpg">
+                    <h2 class="address-h2">ADDRESS</h2>
+                    <p class="address-para">
+                        আব্দুল লতিফ হাট, ১৮নং ওয়ার্ড, পূর্ব বাকলিয়া, মিয়াখান রোড, বাকলিয়া, চট্টগ্রাম – ৪০০০, বাংলাদেশ।
+                    </p>
+                </div>
+                <div class="telephone-email-div">
+
+
+                    <div class="div-para-telephone">
+                        <img class="telephone-icon" src="telephone.jpg">
+                        <h2 class="telephone-h2">TELEPHONE</h2>
+                        <p class="telephone-para">
+                            ০১৩০৯–১৩১৩৮৫
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="div-para-email">
+                        <img class="email-icon" src="envelope.jpg">
+                        <h2 class="email-h2">EMAIL</h2>
+                        <p class="email-para">
+                            hm@pbcchs.edu.bd
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
         </div>
-        <div class="last-line-1">
+
+        <div class="last-div">
 
             <div class="last-line-1">
                 <p class="last-para">
-                    <img class="facebook" src="facebook.png">
-                    <img class="google" src="google.png">
-                    <img class="youtube" src="youtube.png">
+                    এই&nbsp;ওয়েবসাইটের&nbsp;সকল&nbsp;স্বত্ব&nbsp;বিদ্যালয়&nbsp;কর্তৃক&nbsp;সংরক্ষিত
+                </p>
+            </div>
+            <div class="last-line-1">
+
+                <div class="last-line-1">
+                    <p class="last-para">
+                        <img class="facebook" src="facebook.png">
+                        <img class="google" src="google.png">
+                        <img class="youtube" src="youtube.png">
+                    </p>
+                </div>
+
+                <hr class="hr">
+            </div>
+            <div class="last-line-1">
+                <p class="last-para">
+                    DEVELOPED BY <h2 class="last-h3"><strong>BBST</strong></h2>
                 </p>
             </div>
 
-            <hr class="hr">
         </div>
-        <div class="last-line-1">
-            <p class="last-para">
-                DEVELOPED BY <h2 class="last-h3"><strong>BBST</strong></h2>
-            </p>
-        </div>
-
-
 
 
     </div>
@@ -1360,9 +401,27 @@
             navLinks.style.right = "20px";
         }
         function hideMenu() {
-            navLinks.style.right = "-290px";
+            navLinks.style.right = "-300px";
+            proshasonikBlink.style.display = "none";
+            admissionBlink.style.display = "none";
         }
 
+        var admissionBlink = document.getElementById("admissionBlink");
+        var proshasonikBlink = document.getElementById("proshasonikBlink");
+
+
+        function opacityproshasonik() {
+            proshasonikBlink.style.display = "flex";
+            admissionBlink.style.display = "none";
+        }
+
+
+
+        function opacityadmission() {
+            admissionBlink.style.display = "flex";
+            proshasonikBlink.style.display = "none";
+
+        }
     </script>
 
 
