@@ -1,11 +1,15 @@
 <!DOCTYPE html>
+
 <html lang="gl">
 <head>
-    <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>PBCCHS</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="home.css" type="text/css" media="all">
+	<meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>PBCCHS</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="home.css" type="text/css" media="all">
+	<link rel="stylesheet" href="index.css" type="text/css" media="all">
+	<link rel="stylesheet" href="420.css" type="text/css" media="all">	
+	<script type="text/javascript" charset="utf-8" src="Script.js" defer></script>
 </head>
 <style type="text/css" media="all">
 
@@ -14,430 +18,407 @@
 
 
 
-    <div class="main-div-of-home-page">
+	<div class="main-div-of-home-page">
 
-        <div class="home-container-of-banner-button-header">
+		<div class="home-container-of-banner-button-header">
 
 
-            <div class="div-of-home-page-photos-and-banner">
-                <img class="fi2firstbanner" src="building.png" onclick="hideMenu()">
-                <div class="news-ticker-home-page" onclick="hideMenu()">
-                    <div class="breaking-news">
-                        <p class="para-breaking">
-                            <span>Breaking</span>
-                        </p>
-                        <p class="para-news">
-                            News
-                        </p>
-                    </div>
-                    <ul class="ul-of-all-newses" onclick="hideMenu()">
-                        <li class="li-of-charts-news"><a class="link-news-breaking" href="https/www.youtube.com">helo hello halsjdj</a></li>
-                        <li class="li-of-charts-news"><a class="link-news-breaking" href="https/www.youtube.com">helo hello halsjdj</a></li>
-                        <li class="li-of-charts-news"><a class="link-news-breaking" href="https/www.youtube.com">helo hello halsjdj</a></li>
-                    </ul>
+			<div class="div-of-home-page-photos-and-banner">
+				<img class="fi2firstbanner" src="building.png" onclick="hideMenu()">
+				<div class="news-ticker-home-page" onclick="hideMenu()">
+					<div class="breaking-news">
+						<p class="para-breaking">
+							<span>Breaking</span>
+						</p>
+						<p class="para-news">
+							News
+						</p>
+					</div>
+					<ul class="ul-of-all-newses" onclick="hideMenu()">
+						<li class="li-of-charts-news"><a id="news1" class="link-news-breaking" href="https/www.youtube.com"></a></li>
+						<li class="li-of-charts-news"><a id="news2" class="link-news-breaking" href="https/www.youtube.com"></a></li>
+						<li class="li-of-charts-news"><a id="news3" class="link-news-breaking" href="https/www.youtube.com"></a></li>
+					</ul>
 
 
 
 
-                </div>
+				</div>
+<div>
+				<div class="header">
+					<div class="div-menu" >
+						<div>
+							<i class="menu" onclick="showMenu()">
+								<hr class="hr2">
+								<hr class="hr2">
+								<hr class="hr2">
+							</i>
+						</div>
 
-                <div class="header">
-                    <div class="div-menu">
-                        <div>
-                            <i class="menu" onclick="showMenu()">
-                                <hr class="hr2">
-                                <hr class="hr2">
-                                <hr class="hr2">
-                            </i>
-                        </div>
+					</div>
+					<div class="glowbuttondiv" id="navLinks">
+						<i class="close" onclick="hideMenu()">
+							<hr class="hr3">
+							<hr class="hr4">
+						</i>
 
-                    </div>
-                    <div class="glowbuttondiv" id="navLinks">
-                        <i class="close" onclick="hideMenu()">
-                            <hr class="hr3">
-                            <hr class="hr4">
-                        </i>
+						<div class="glowbuttondiv-2">
+							<a class="linkglowbutton" href="index.html" style="--clr:black"><span class="spanglowbutton">প্রচ্ছদ</span><i class="iglowbutton"></i></a>
 
-                        <div class="glowbuttondiv-2">
-                            <a class="linkglowbutton" href="index.html" style="--clr:black"><span class="spanglowbutton">প্রচ্ছদ</span><i class="iglowbutton"></i></a>
 
 
+							<a onclick="opacityproshasonik()" class="linkglowbutton" style="--clr:rgb(0,255,255)"><span class="spanglowbutton">প্রশাসনিক</span><i class="iglowbutton"></i></a><div class="proshasonik-link-container-11" id="proshasonikBlink"  onclick="hideMenu()">
+							<a style="--clr:#0085FF" class="proshasonik-link-1" href="porichalonaporishod.html">পরিচালনা&nbsp;পর্ষদ</a>
+							<a style="--clr:#3FC700" class="proshasonik-link-1" href="porichalonaporishod.html">শিক্ষকবৃন্দ</a>
+							<a style="--clr:#D0D100" class="proshasonik-link-1" href="porichalonaporishod.html">কর্মচারীবৃন্দ</a>
+						</div>
 
-                            <a onclick="opacityproshasonik()" class="linkglowbutton" style="--clr:rgb(0,255,255)"><span class="spanglowbutton">প্রশাসনিক</span><i class="iglowbutton"></i></a>
 
 
+							<a class="linkglowbutton" href=" academic.html" style="--clr:rgb(0,0,255)"><span class="spanglowbutton">একাডেমিক</span><i class="iglowbutton"></i></a>
 
-                            <a class="linkglowbutton" href=" academic.html" style="--clr:rgb(0,0,255)"><span class="spanglowbutton">একাডেমিক</span><i class="iglowbutton"></i></a>
 
 
+							<a onclick="opacityadmission()" class="linkglowbutton" style="--clr:rgb(255,0,0)"><span class="spanglowbutton">এডমিশন</span><i class="iglowbutton"></i></a><div class="proshasonik-link-container-22" id="admissionBlink"  onclick="hideMenu()">
+							<a style="--clr:#0085FF" class="proshasonik-link-1" href="porichalonaporishod.html">সাধারণ&nbsp;তথ্য</a>
+							<a style="--clr:#3FC700" class="proshasonik-link-1" href="porichalonaporishod.html">অনলাইন&nbsp;আবেদন</a>
+						</div>
 
-                            <a onclick="opacityadmission()" class="linkglowbutton" style="--clr:rgb(255,0,0)"><span class="spanglowbutton">এডমিশন</span><i class="iglowbutton"></i></a>
 
 
+							<a class="linkglowbutton" href="notice.html" style="--clr:rgb(120,0,255)"><span class="spanglowbutton">নোটিশ</span><i class="iglowbutton"></i></a>
+							<a href="https://eduonlineresult.com/" class="linkglowbutton" style="--clr:rgb(230,230,0)"><span class="spanglowbutton">ফলাফল</span><i class="iglowbutton"></i></a>
+							<a class="linkglowbutton" href="contact.html" style="--clr:rgb(250,150,0)"><span class="spanglowbutton">যোগাযোগ</span><i class="iglowbutton"></i></a>
+						
+						</div>
 
-                            <a class="linkglowbutton" href="notice.html" style="--clr:rgb(120,0,255)"><span class="spanglowbutton">নোটিশ</span><i class="iglowbutton"></i></a>
-                            <a href="https://eduonlineresult.com/" class="linkglowbutton" style="--clr:rgb(230,230,0)"><span class="spanglowbutton">ফলাফল</span><i class="iglowbutton"></i></a>
-                            <a class="linkglowbutton" href="contact.html" style="--clr:rgb(250,150,0)"><span class="spanglowbutton">যোগাযোগ</span><i class="iglowbutton"></i></a>
-                        </div>
 
 
+						
 
-                        <div class="proshasonik-link-container-11" id="proshasonikBlink">
-                            <a style="--clr:#0085FF" class="proshasonik-link-1" href="porichalonaporishod.html">পরিচালনা&nbsp;পর্ষদ</a>
-                            <a style="--clr:#3FC700" class="proshasonik-link-1" href="porichalonaporishod.html">শিক্ষকবৃন্দ</a>
-                            <a style="--clr:#D0D100" class="proshasonik-link-1" href="porichalonaporishod.html">কর্মচারীবৃন্দ</a>
-                        </div>
 
 
+						
 
-                        <div class="proshasonik-link-container-22" id="admissionBlink">
-                            <a style="--clr:#0085FF" class="proshasonik-link-1" href="porichalonaporishod.html">সাধারণ&nbsp;তথ্য</a>
-                            <a style="--clr:#3FC700" class="proshasonik-link-1" href="porichalonaporishod.html">অনলাইন&nbsp;আবেদন</a>
-                        </div>
 
 
+					</div>
+					<img class="home-background" src="logo.jpg" onclick="hideMenu()">
+				</div>
 
-                    </div>
-                    <img class="home-background" src="logo.jpg" onclick="hideMenu()">
-                </div>
 
 
 
 
-            </div>
-            <div class="home-all-history" onclick="hideMenu()">
+			
+			<div class="home-all-history" onclick="hideMenu()">
 
-                <div class="div-of-home-text1">
+				<div class="div-of-home-text1">
 
-                    <p class="paralink-header">
-                        প্রতিষ্ঠানের&nbsp;ইতিহাস
-                    </p>
-                    <div class="home-all-history-img">
+					<p class="paralink-header">
+						প্রতিষ্ঠানের&nbsp;ইতিহাস
+					</p>
+					<div class="home-all-history-img">
 
-                        <img class="image-home-1" src="schoollogo.jpg">
-                    </div>
-                    <p class="para">
+						<img class="image-home-1" src="schoollogo.jpg">
+					</div>
+					<p class="para">
 
-                        শিক্ষার&nbsp; দিক বিবেচনা করে চট্টগ্রাম মহানগরীর  ১৮নং  ওয়ার্ড, পূর্ব বাকলিয়া  এলাকার গণ্যমান্য ব্যক্তিবর্গ  এবং সাবেক মৎস্য ও পশুসম্পদ&nbsp; মন্ত্রী  জনাব আলহাজ্ব&nbsp; আব্দুল্লাহ-আল-নোমান সহ ১৭/০১/২০০৩ইং&nbsp; সালে অত্র বিদ্যালয়টি মধ্যম বাকলিয়া উচ্চ বিদ্যালয় নামে প্রতিষ্ঠা করেন। যেহেতু বিদ্যালয়টি মধ্যম বাকলিয়া&nbsp; এলাকায়&nbsp; অবস্থিত নয়&nbsp; সেহেতু&nbsp; বিদ্যালয়ের নাম পরিবর্তন&nbsp; করার জন্য&nbsp; গত&nbsp; ০৯/০১/২০০৫ইং&nbsp; এলাকার ৫০(পঞ্চাশ) জন মানুষের
+						শিক্ষার&nbsp; দিক বিবেচনা করে চট্টগ্রাম মহানগরীর  ১৮নং  ওয়ার্ড, পূর্ব বাকলিয়া  এলাকার গণ্যমান্য ব্যক্তিবর্গ  এবং সাবেক মৎস্য ও পশুসম্পদ&nbsp; মন্ত্রী  জনাব আলহাজ্ব&nbsp; আব্দুল্লাহ-আল-নোমান সহ ১৭/০১/২০০৩ইং&nbsp; সালে অত্র বিদ্যালয়টি মধ্যম বাকলিয়া উচ্চ বিদ্যালয় নামে প্রতিষ্ঠা করেন। যেহেতু বিদ্যালয়টি মধ্যম বাকলিয়া&nbsp; এলাকায়&nbsp; অবস্থিত নয়&nbsp; সেহেতু&nbsp; বিদ্যালয়ের নাম পরিবর্তন&nbsp; করার জন্য&nbsp; গত&nbsp; ০৯/০১/২০০৫ইং&nbsp; এলাকার ৫০(পঞ্চাশ) জন মানুষের....
 
-                    </p>
+					</p>
 
 
 
-                    <a class="paralink1" href="pppbiddaloyeritihash.html"><p class="paralink1">
-                        [আরো&nbsp;পড়ুন]
-                    </p>
-                    </a>
-                </div>
+					<a class="paralink1" href="pppbiddaloyeritihash.html"><p class="paralink1">
+						[আরো&nbsp;পড়ুন]
+					</p>
+					</a>
+				</div>
 
-                <div class="div-of-home-text2">
-                    <p class="paralink-header">
-                        সভাপতি&nbsp;
-                    </p>
-                    <div class="home-all-history-img">
-                        <img class="image-home-2" src="meyor.jpg">
-                    </div>
-                    <p class="para">
+				<div class="div-of-home-text1">
+					<p class="paralink-header">
+						সভাপতি&nbsp;
+					</p>
+					<div class="home-all-history-img">
+						<img class="image-home-1" src="meyor.jpg">
+					</div>
+					<p class="para">
 
-                        বন্দর &nbsp;নগরী চট্টগ্রামের&nbsp; প্রাণকেন্দ্রে&nbsp; প্রতিষ্ঠিত&nbsp; পূর্ব&nbsp; বাকলিয়া সিটি কর্পোরেশন উচ্চ বিদ্যালয় প্রতিষ্ঠালগ্ন হতেই শিক্ষাক্ষেত্রে গুরুত্বপূর্ণ&nbsp; অবদান&nbsp; রেখে চলেছে। উন্নত জাতি গঠনের লক্ষ্যে এই&nbsp; প্রতিষ্ঠান&nbsp; শিক্ষার্থীদের মেধা ও&nbsp; মননের&nbsp; বিকাশে&nbsp; বিভিন্ন সহশিক্ষা&nbsp; কার্যক্রম&nbsp;&nbsp; সাফল্যের&nbsp;&nbsp; সাথে&nbsp;&nbsp; পরিচালনা&nbsp; করছে। প্রতিষ্ঠানকে আধুনিক ও যুগোপযোগীকরণের লক্ষ্যে বর্তমানে ওয়েবসাইটের মাধ্যমে বিভিন্ন সেবা প্রদান কার্যক্রম চলমান রয়েছে।
+						বন্দর &nbsp;নগরী চট্টগ্রামের&nbsp; প্রাণকেন্দ্রে&nbsp; প্রতিষ্ঠিত&nbsp; পূর্ব&nbsp; বাকলিয়া সিটি কর্পোরেশন উচ্চ বিদ্যালয় প্রতিষ্ঠালগ্ন হতেই শিক্ষাক্ষেত্রে গুরুত্বপূর্ণ&nbsp; অবদান&nbsp; রেখে চলেছে। উন্নত জাতি গঠনের লক্ষ্যে এই&nbsp; প্রতিষ্ঠান&nbsp; শিক্ষার্থীদের মেধা ও&nbsp; মননের&nbsp; বিকাশে&nbsp; বিভিন্ন সহশিক্ষা&nbsp; কার্যক্রম&nbsp;&nbsp; সাফল্যের&nbsp;&nbsp; সাথে&nbsp;&nbsp; পরিচালনা&nbsp; করছে। প্রতিষ্ঠানকে আধুনিক ও যুগোপযোগীকরণের লক্ষ্যে বর্তমানে ওয়েবসাইটের মাধ্যমে বিভিন্ন সেবা প্রদান কার্যক্রম চলমান রয়েছে।....
 
-                    </p>
+					</p>
 
 
 
 
-                    <a class="paralink1" href="pppshovapoti.html"><p class="paralink1">
-                        [আরো&nbsp;পড়ুন]
-                    </p>
-                    </a>
-                </div>
-                <div class="div-of-home-text3">
-                    <p class="paralink-header">
-                        প্রধান&nbsp;শিক্ষক
-                    </p>
-                    <div class="home-all-history-img">
-                        <img class="image-home-3" src="schoollogo.png.jpg">
-                    </div>
-                    <p class="para">
+					<a class="paralink1" href="pppshovapoti.html"><p class="paralink1">
+						[আরো&nbsp;পড়ুন]
+					</p>
+					</a>
+				</div>
+				<div class="div-of-home-text1">
+					<p class="paralink-header">
+						প্রধান&nbsp;শিক্ষক
+					</p>
+					<div class="home-all-history-img">
+						<img class="image-home-1" src="schoollogo.png.jpg">
+					</div>
+					<p class="para">
 
-                        অনাবিল প্রাকৃতিক সৌন্দর্যের লীলাভূমি চট্টগ্রাম মহানগরীর প্রাণকেন্দ্রে&nbsp; অবস্থিত&nbsp; শিক্ষা&nbsp; প্রতিষ্ঠান&nbsp; পূর্ব&nbsp; বাকলিয়া&nbsp; সিটি&nbsp; কর্পোরেশন উচ্চ বিদ্যালয়। ২০০৩ সালে স্থাপিত এই বিদ্যালয় শিক্ষার্থীদের মেধা ও মননকে লালন ও শাণিত করার মাধ্যমে দেশের যোগ্য ভবিষ্যৎ নাগরিক গড়ে তোলার ক্ষেত্রে বরাবরই উল্লেখযোগ্য ভূমিকা পালন করে আসছে। শিক্ষা মানবসম্পদ ও জাতীয় উন্নয়নের মূল হাতিয়ার। পূর্ব বাকলিয়া সিটি কর্পোরেশন উচ্চ
-                    </p>
+						অনাবিল প্রাকৃতিক সৌন্দর্যের লীলাভূমি চট্টগ্রাম মহানগরীর প্রাণকেন্দ্রে&nbsp; অবস্থিত&nbsp; শিক্ষা&nbsp; প্রতিষ্ঠান&nbsp; পূর্ব&nbsp; বাকলিয়া&nbsp; সিটি&nbsp; কর্পোরেশন উচ্চ বিদ্যালয়। ২০০৩ সালে স্থাপিত এই বিদ্যালয় শিক্ষার্থীদের মেধা ও মননকে লালন ও শাণিত করার মাধ্যমে দেশের যোগ্য ভবিষ্যৎ নাগরিক গড়ে তোলার ক্ষেত্রে বরাবরই উল্লেখযোগ্য ভূমিকা পালন করে আসছে। শিক্ষা মানবসম্পদ ও জাতীয় উন্নয়নের মূল হাতিয়ার। পূর্ব বাকলিয়া সিটি কর্পোরেশন উচ্চ....
+					</p>
 
 
 
-                    <a class="paralink1" href="pppprodhanshikkhok.html"><p class="paralink1">
-                        [আরো&nbsp;পড়ুন]
-                    </p>
-                    </a>
-                </div>
+					<a class="paralink1" href="pppprodhanshikkhok.html"><p class="paralink1">
+						[আরো&nbsp;পড়ুন]
+					</p>
+					</a>
+				</div>
 
-            </div>
-        </div>
+			</div>
+			</div>
+		</div>
 
-        <div class="div-of-home-chart" onclick="hideMenu()">
+		<div class="div-of-home-chart" onclick="hideMenu()">
 
-            <div class="div-of-home-chart-1">
-                <p class="para-chart-1">
-                    শিক্ষার্থীর&nbsp;তথ্য
-                </p>
+			<div class="div-of-home-chart-1">
+				<p class="para-chart-1">
+					শিক্ষার্থীর&nbsp;তথ্য
+				</p>
 
-                <li class="li-of-charts"><a class="anchor-of-li-chart-1" href="zsyllabus.html">সিলেবাস</a></li>
-                <li class="li-of-charts"><a href="zclassroutine.html" class="anchor-of-li-chart-1">ক্লাস&nbsp;রুটিন</a></li>
+				<li><a class="anchor-of-li-chart-1" href="zsyllabus.html">সিলেবাস</a></li>
+				<li><a href="zclassroutine.html" class="anchor-of-li-chart-1">ক্লাস&nbsp;রুটিন</a></li>
 
 
 
-            </div>
-            <div class="div-of-home-chart-2">
-                <p class="para-chart-1">
-                    শিক্ষকদের&nbsp;তথ্য
-                </p>
+			</div>
+			<div class="div-of-home-chart-1">
+				<p class="para-chart-1">
+					শিক্ষকদের&nbsp;তথ্য
+				</p>
 
-                <li class="li-of-charts"><a href="zshikkhok.html" class="anchor-of-li-chart-1">শিক্ষকবৃন্দ</a></li>
+				<li><a href="zshikkhok.html" class="anchor-of-li-chart-1">শিক্ষকবৃন্দ</a></li>
 
-                <li class="li-of-charts"><a href="zonapottisonod.html" class="anchor-of-li-chart-1">অনাপত্তি&nbsp;সনদ</a></li>
-                <li class="li-of-charts"><a href="zsunnotalika.html" class="anchor-of-li-chart-1">শূন্য&nbsp;তালিকা</a>
-                </li>
+				<li><a href="zonapottisonod.html" class="anchor-of-li-chart-1">অনাপত্তি&nbsp;সনদ</a></li>
+				<li><a href="zsunnotalika.html" class="anchor-of-li-chart-1">শূন্য&nbsp;তালিকা</a>
+				</li>
 
-            </div>
+			</div>
 
-            <div class="div-of-home-chart-3">
-                <p class="para-chart-1">
-                    ডাউনলোড
-                </p>
+			<div class="div-of-home-chart-1">
+				<p class="para-chart-1">
+					ডাউনলোড
+				</p>
 
-                <li class="li-of-charts"><a class="anchor-of-li-chart-1" href="zuniqueid.html">ইউনিক&nbsp;আইডি&nbsp;ফর্ম</a></li>
+				<li><a class="anchor-of-li-chart-1" href="zuniqueid.html">ইউনিক&nbsp;আইডি&nbsp;ফর্ম</a></li>
 
 
 
-            </div>
-            <div class="div-of-home-chart-4">
-                <p class="para-chart-1">
-                    একাডেমিক&nbsp;তথ্য
-                </p>
+			</div>
+			<div class="div-of-home-chart-1">
+				<p class="para-chart-1">
+					একাডেমিক&nbsp;তথ্য
+				</p>
 
-                <li class="li-of-charts">
-                    <a href="zeeebook.html" class="anchor-of-li-chart-1"> ই-বুক</a>
-                </li>
-                <li class="li-of-charts"><a href="zcomputerlab.html" class="anchor-of-li-chart-1">কম্পিউটার&nbsp;ল্যাব</a></li>
-                <li class="li-of-charts"><a href="zclassroutine.html" class="anchor-of-li-chart-1">ক্লাস&nbsp;রুটিন</a>
-                </li>
-                <li class="li-of-charts"><a href="zsyllabus.html" class="anchor-of-li-chart-1">সিলেবাস</a>
-                </li>
+				<li>
+					<a href="zeeebook.html" class="anchor-of-li-chart-1"> ই-বুক</a>
+				</li>
+				<li><a href="zcomputerlab.html" class="anchor-of-li-chart-1">কম্পিউটার&nbsp;ল্যাব</a></li>
+				<li><a href="zclassroutine.html" class="anchor-of-li-chart-1">ক্লাস&nbsp;রুটিন</a>
+				</li>
+				<li><a href="zsyllabus.html" class="anchor-of-li-chart-1">সিলেবাস</a>
+				</li>
 
-            </div>
+			</div>
 
-        </div>
+		</div>
 
+</div>
+		<div class="div-of-google-facebook-embed">
+		<div><h1>Our Facebook Page</h1>	<div class="div-of-facebook-embed">
+				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpbcchs.edu%3Fmibextid%3DZbWKwL&tabs=timeline&width=450&height=500&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId" width="440" style="border:none;overflow:hidden;max-width:100%;height:100%;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+			</div>
 
-<div class="div-of-google-facebook-embed">
-<div class="div-of-facebook-embed">
+			</div>
+			<div class="div-of-google-embed">
+<div><h1>Our School On Map</h1><div style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:500px;height:500px;"><div id="embed-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Purba+Bakalia+city+corporation+High+Schoola&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="embed-ded-maphtml" rel="nofollow" href="https://www.bootstrapskins.com/themes" id="enable-map-info">premium bootstrap themes</a><style>#embed-map-canvas img{max-height:none;max-width:none!important;background:none!important;}</style></div>
 
-<h1 class="h1-of-embed">Facebook</h1>
-
-
-                        </div>
-<div class="div-of-google-embed">
-
-
-<h1 class="h1-of-embed">Google</h1>
-
-
-                        </div>
 </div>
 
-        <div class="div-of-home-chart-second" onclick="hideMenu()">
+			</div>
+		</div>
 
+		<div class="div-of-home-chart-second" onclick="hideMenu()">
 
-            <div class="div-of-home-chart-2-second">
-                <p class="para-chart-1-second">
-                    DEPARTMENT&nbsp;LINK
-                </p>
-                <div class="div-of-home-chart-2-second-charts">
 
+			<div class="div-of-home-chart-2-second">
+				<p class="para-chart-1">
+					DEPARTMENT&nbsp;LINKS
+				</p>
+				<div class="div-of-home-chart-2-second-charts">
 
-                    <div class="div-of-home-chart-2-second-a">
 
+					<div class="div-of-home-chart-2-second-a">
 
-                        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.educationboardresults.gov.bd/">
-                            এসএসসি&nbsp;ফলাফল
-                        </a></li>
 
-                        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="https://teachers.gov.bd/">
-                            শিক্ষক&nbsp;বাতায়ন
-                        </a></li>
-                        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="https://muktopaath.gov.bd/">
-                            মুক্তপাঠ</a></li>
-                        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="https://ems.pbcchs.edu.bd/">
-                            ইএমএস
-                        </a></li>
-                        <li class="li-of-charts-second"><a href="https://banbeis.gov.bd/" class="anchor-of-li-chart-1-second">ব্যানবেইস</a></li>
+						<li><a class="anchor-of-li-chart-1-second" href="http://www.educationboardresults.gov.bd/">
+							এসএসসি&nbsp;ফলাফল
+						</a></li>
 
-                        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="https://web.bise-ctg.gov.bd/bisectg">চট্টগ্রাম&nbsp;শিক্ষাবোর্ড</a></li>
-                        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="https://dhakaeducationboard.gov.bd/">ঢাকা&nbsp;শিক্ষাবোর্ড</a>
-                        </li>
-                        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="https://dshe.gov.bd/">
-                            মাউশি
-                        </a>
-                        </li>
+					<li><a class="anchor-of-li-chart-1-second" href="https://teachers.gov.bd/">
+							শিক্ষক&nbsp;বাতায়ন
+						</a></li>
+						<li><a class="anchor-of-li-chart-1-second" href="https://muktopaath.gov.bd/">
+							মুক্তপাঠ</a></li>
+						<li><a class="anchor-of-li-chart-1-second" href="https://ems.pbcchs.edu.bd/">
+							ইএমএস
+						</a></li>
+						<li><a href="https://banbeis.gov.bd/" class="anchor-of-li-chart-1-second">ব্যানবেইস</a></li>
 
+						<li><a class="anchor-of-li-chart-1-second" href="https://web.bise-ctg.gov.bd/bisectg">চট্টগ্রাম&nbsp;শিক্ষাবোর্ড</a></li>
+						<li><a class="anchor-of-li-chart-1-second" href="https://dhakaeducationboard.gov.bd/">ঢাকা&nbsp;শিক্ষাবোর্ড</a>
+						</li>
+						<li><a class="anchor-of-li-chart-1-second" href="https://dshe.gov.bd/">
+							মাউশি
+						</a>
+						</li>
 
-                       
 
 
-                    </div>
 
-                    <div class="div-of-home-chart-2-second-b">
 
+					</div>
 
+					<div class="div-of-home-chart-2-second-b">
 
-                        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
-                            NCTB
-                        </a></li>
-                        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
-                            E-BOOK
-                        </a></li>
-                        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
-                        কিশোর বাতায়ন    
-                            </a></li>
-                        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
-                            Ctg. City Corporation
-                        </a></li>
-                        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
-                            ইএমএস
-                        </a></li>
-                        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
-                            CITIZEN
-                        </a></li>
-                        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
-                            তথ্য বাতায়ন
-                        </a></li>
-                        <li class="li-of-charts-second"><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
-                            IMED
-                        </a></li>
 
 
+						<li><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
+							NCTB
+						</a></li>
+						<li><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
+							E-BOOK
+						</a></li>
+						<li><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
+							কিশোর&nbsp;বাতায়ন
+						</a></li>
+						<li><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
+							Ctg.&nbsp;City&nbsp;Corporation
+						</a></li>
+						<li><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
+							ইএমএস
+						</a></li>
+						<li><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
+							CITIZEN
+						</a></li>
+						<li><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
+							তথ্য বাতায়ন
+						</a></li>
+						<li><a class="anchor-of-li-chart-1-second" href="http://www.google.com">
+							IMED
+						</a></li>
 
 
-                    </div>
 
 
+					</div>
 
-                </div>
 
 
+				</div>
 
 
 
-            </div>
 
-                     
 
+			</div>
 
 
-            <div class="div-of-home-chart-2-second-2" onclick="hideMenu()">
 
 
-                <div class="div-para-address">
+			<div class="div-of-home-chart-2-index-contact" onclick="hideMenu()">
 
-                    <img class="address-icon" src="address.jpg">
-                    <h2 class="address-h2">ADDRESS</h2>
-                    <p class="address-para">
-                        আব্দুল লতিফ হাট, ১৮নং ওয়ার্ড, পূর্ব বাকলিয়া, মিয়াখান রোড, বাকলিয়া, চট্টগ্রাম – ৪০০০, বাংলাদেশ।
-                    </p>
-                </div>
-                <div class="telephone-email-div">
 
+				<div class="div-of-address">
 
-                    <div class="div-para-telephone">
-                        <img class="telephone-icon" src="telephone.jpg">
-                        <h2 class="telephone-h2">TELEPHONE</h2>
-                        <p class="telephone-para">
-                            ০১৩০৯–১৩১৩৮৫
-                        </p>
+					<img class="address-icon" src="address.jpg">
+					<h2 class="address-h2">ADDRESS</h2>
+					<p class="address-para">
+						আব্দুল লতিফ হাট, ১৮নং ওয়ার্ড, পূর্ব বাকলিয়া, মিয়াখান রোড, বাকলিয়া, চট্টগ্রাম – ৪০০০, বাংলাদেশ।
+					</p>
+				</div>
+				<div class="telephone-email-pack">
 
-                    </div>
 
+					<div class="div-of-telephone">
+						<img class="telephone-icon" src="telephone.jpg">
+						<h2 class="telephone-h2">TELEPHONE</h2>
+						<p class="telephone-para">
+							০১৩০৯–১৩১৩৮৫
+						</p>
 
+					</div>
 
-                    <div class="div-para-email">
-                        <img class="email-icon" src="envelope.jpg">
-                        <h2 class="email-h2">EMAIL</h2>
-                        <p class="email-para">
-                            hm@pbcchs.edu.bd
-                        </p>
-                    </div>
-                </div>
-            </div>
 
 
+					<div class="div-of-email">
+						<img class="email-icon" src="envelope.jpg">
+						<h2 class="email-h2">EMAIL</h2>
+						<p class="email-para">
+							hm@pbcchs.edu.bd
+						</p>
+					</div>
+				</div>
+			</div>
 
 
 
 
-        </div>
 
-        <div class="last-div">
 
-            <div class="last-line-1">
-                <p class="last-para">
-                    এই&nbsp;ওয়েবসাইটের&nbsp;সকল&nbsp;স্বত্ব&nbsp;বিদ্যালয়&nbsp;কর্তৃক&nbsp;সংরক্ষিত
-                </p>
-            </div>
-            <div class="last-line-1">
+		</div>
+	<h1 id="hellooo"></h1>
+<script>
+	var new = 10 ;
+	 document.getElementById("hellooo").innerHTML = new ;
 
-                <div class="last-line-1">
-                    <p class="last-para">
-                        <img class="facebook" src="facebook.png">
-                        <img class="google" src="google.png">
-                        <img class="youtube" src="youtube.png">
-                    </p>
-                </div>
+</script>
+		<div class="last-div" onclick="hideMenu()">
 
-                <hr class="hr">
-            </div>
-            <div class="last-line-1">
-                <p class="last-para">
-                    DEVELOPED BY <h2 class="last-h3"><strong>BBST</strong></h2>
-                </p>
-            </div>
+			<div class="last-line-1">
+				<p class="last-para">
+					এই&nbsp;ওয়েবসাইটের&nbsp;সকল&nbsp;স্বত্ব&nbsp;বিদ্যালয়&nbsp;কর্তৃক&nbsp;সংরক্ষিত
+				</p>
+			</div>
+			<div class="last-line-1">
 
-        </div>
+				<div class="last-line-1">
+					<p class="last-para">
+					<img class="facebook" src="facebook.png">&nbsp;<img class="google" src="google.png">&nbsp;<img class="youtube" src="youtube.png">
+					</p>
+				</div>
 
+				<hr class="hr">
+			</div>
+			<div class="last-line-1">
+				<p class="last-pr">
+					DEVELOPED&nbsp;BY <strong><h1 class="BBST">BBST</h1></strong>
+				</p>
+			</div>
 
-    </div>
+		</div>
 
 
-    <script>
-        var navLinks = document.getElementById("navLinks");
+	</div>
 
+<div class="loader"><p class="loader-p">Just a<br>
+                    sec...</p></div>
 
-        function showMenu() {
-            navLinks.style.right = "20px";
-        }
-        function hideMenu() {
-            navLinks.style.right = "-300px";
-            proshasonikBlink.style.display = "none";
-            admissionBlink.style.display = "none";
-        }
 
-        var admissionBlink = document.getElementById("admissionBlink");
-        var proshasonikBlink = document.getElementById("proshasonikBlink");
-
-
-        function opacityproshasonik() {
-            proshasonikBlink.style.display = "flex";
-            admissionBlink.style.display = "none";
-        }
-
-
-
-        function opacityadmission() {
-            admissionBlink.style.display = "flex";
-            proshasonikBlink.style.display = "none";
-
-        }
-    </script>
-
+</div>
+	
 
 
 
