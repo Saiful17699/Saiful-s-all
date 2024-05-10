@@ -6,7 +6,6 @@ display: none;
 align-items: right;
 justify-content: right;
 width: 200px;
-transform: translateX(214px) translateY(20px);
 height: 0;
 transition: 1s;
 
@@ -19,7 +18,6 @@ display: none;
 align-items: right;
 justify-content: right;
 width: 200px;
-transform: translateX(375px) translateY(20px);
 height: 0;
 transition: 1s;
 
@@ -37,7 +35,7 @@ display: none;
 align-items: right;
 justify-content: right;
 width: 200px;
-transform: translateX(50px) translateY(-396px);
+transform: translateX(50px) translateY(-50px);
 height: 0;
 transition: 1s;
 
@@ -50,7 +48,7 @@ display: none;
 align-items: right;
 justify-content: right;
 width: 200px;
-transform: translateX(50px) translateY(-303px);
+transform: translateX(50px) translateY(-50px);
 height: 0;
 transition: 1s;
 
